@@ -12,5 +12,9 @@
   },
   "author": "Oscar Cu",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/oscaracu/plantilla-html#readme"
+  "homepage": "https://bitbucket.org/oscaracu/plantilla-html#readme",
+  "dependencies": {
+    "@popperjs/core": "^2.9.2",
+    "bootstrap": "^5.0.0-beta3"
+  }
 }
