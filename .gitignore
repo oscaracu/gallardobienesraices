@@ -6,6 +6,7 @@
 # Node artifact files
 node_modules/
 dist/
+bt_zoner_quickstart/
 
 # Compiled Java class files
 *.class

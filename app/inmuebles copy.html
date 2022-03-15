@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallardo Bienes Raices</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/node_modules/@splidejs/splide/dist/css/themes/splide-default.min.css">
+</head>
+
+<body>
+    <header>
+
+        <!-- Inicia barra de navegacion -->
+        <div w3-include-html="navbar.htm" class="bg-danger"></div>
+        <!-- Finaliza barra de navegacion -->
+
+        <!-- Inicia Portada -->
+        <div w3-include-html="portada-listados.htm"></div>
+        <!-- Finaliza Portada -->
+
+    </header>
+
+    <!-- Inicia Barra de Busqueda -->
+    <div w3-include-html="searchbar.htm" class="sticky-lg-top"></div>
+    <!-- Finaliza Barra de Busqueda -->
+
+    <!-- Inicia Contenido -->
+    <section w3-include-html="" id="superior" class="bg-light"></section>
+    <!-- Finaliza Contenido -->
+
+    <!-- Inicia Area Inmuebles Recientes -->
+    <section id="recientes" class="bg-black bg-opacity-10">
+        <div class="container p-3">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Library</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Data</li>
+              </ol>
+            </nav>
+            <div class="row" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": ".grid-sizer", "percentPosition": true }'>
+                <div class="grid-sizer col-12 col-lg-4"></div>
+              <div class="grid-item col-12 col-lg-8">
+                <div id="main-slider" class="splide">
+                  <div class="splide__track">
+                    <ul class="splide__list">
+                      <li class="splide__slide">
+                        <img src="images/inmueble01.jpeg" />
+                      </li>
+                      <li class="splide__slide">
+                        <img src="images/inmueble02.jpeg" />
+                      </li>
+                      <li class="splide__slide">
+                        <img src="images/inmueble03.jpeg" />
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                
+                <ul id="thumbnails" class="thumbnails">
+                  <li class="thumbnail">
+                    <img src="images/inmueble01.jpeg" />
+                  </li>
+                  <li class="thumbnail">
+                    <img src="images/inmueble02.jpeg" />
+                  </li>
+                  <li class="thumbnail">
+                    <img src="images/inmueble03.jpeg" />
+                  </li>
+                </ul>
+              </div>
+              <div class="grid-item col-12 col-lg-4">
+                <div class="card">
+                  <div class="card-header">
+                    <h3 class="card-title">Casa Colonial restaurada, en muy buenas condiciones.</h3>
+                    <h5 class="card-subtitle mb-2 text-muted">Centro Histórico, Campeche.</h5>
+                    <span class="badge bg-primary fs-4">$4,500,000.00</span>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Descripción:</h5>
+                    <p class="card-text">Cuenta con sala, comedor, cocina, 3 baños, alberca, dos recámaras y área de descanso.
+                      (Muebles y equipos a tratar).</p>
+                  </div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item fw-bold">Disponibilidad: <span class="badge bg-danger fw-normal float-end">En Renta</span></li>
+                    <li class="list-group-item fw-bold">Terreno: <span class="fw-normal float-end">511.00 m<sup>2</sup></span>
+                    </li>
+                    <li class="list-group-item fw-bold">Construcción: <span class="fw-normal float-end">167.00 m<sup>2</sup></li>
+                    </span>
+                    <li class="list-group-item fw-bold">Baños: <span class="fw-normal float-end">3</span></li>
+                    <li class="list-group-item fw-bold">Recámaras: <span class="fw-normal float-end">2</span></li>
+                  </ul>
+                </div>
+                <div class="mt-4">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1876.388436553379!2d-90.5311660357943!3d19.849391762493287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa3ae2eee08a00744!2sGallardo%20Bienes%20Ra%C3%ADces!5e0!3m2!1ses-419!2smx!4v1647162082232!5m2!1ses-419!2smx"
+                    width="100%" height="240" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+              </div>
+              <div class="grid-item col-12 col-lg-8">
+                <form class="bg-white p-3" action="">
+                  <h3 class="text-muted text-center text-md-start pb-2">Solicite más información aquí:</h3>
+                  <div class="row g-3 form-floating">
+                    <div class="col-12 col-md-6"><input type="text" class="form-control" id="contact-name" placeholder="Nombre" aria-label="mombre" required></div>
+                    <div class="col-12 col-md-6"><input type="email" class="form-control" id="contact-email" placeholder="usuario@ejemplo.com" aria-label="e-mail" required></div>
+                    <div class="col-12"><input type="text" class="form-control" id="contact-subject" placeholder="Asunto" aria-label="asunto" required></div>
+                    <div class="col-12"><textarea class="form-control" id="message" rows="5" placeholder="Escriba aquí su mensaje o comentarios." aria-label="comentarios" required></textarea></div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+    </section>
+    <!-- Finaliza Area Inmuebles Recientes -->
+
+    <!-- Inicia Area de Contenido Principal -->
+    <section id="principal"></section>
+    <!-- Finaliza Area de Contenido Principal -->
+
+    <!-- Inicia Pie de Pagina -->
+    <footer w3-include-html="footer.htm" class="bg-primary text-white"></footer>
+    <!-- Finaliza Pie de Pagina -->
+
+    <script src="/node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/node_modules/masonry-layout/dist/masonry.pkgd.min.js"></script>
+    <script src="/node_modules/@splidejs/splide/dist/js/splide.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>includeHTML();</script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallardo Bienes Raices</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css"></head>
+
+<body>
+    <header>
+
+<!-- Inicia barra de navegacion -->
+
+
+<nav >
+    <div class="navbar navbar-light d-block d-sm-none p-3">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img class="mx-auto" src="images/logo.png" alt="Gallardo Bienes Raices"></a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+            aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+            
+    
+            <span class="navbar-toggler-icon "></span>
+        </button>
+    
+
+        </div>
+    </div>
+    
+    <div class="navbar bg-primary navbar-expand-lg navbar-dark" id="barNav">
+    <div class="container">
+        <a class="d-none d-sm-block navbar-brand logo" href="#"><img src="images/logo.png" alt="Gallardo Bienes Raices"></a>
+        <div class="collapse navbar-collapse text-center" id="menu">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">¿Quienes Somos?</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Casas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Locales</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Fraccionamientos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Terrenos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contacto</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</div>
+</nav>
+
+<!-- Finaliza barra de navegacion -->
+
+<!-- Inicia Portada -->
+
+
+        <div class="p-5 text-center bg-image" style="background-image: url('images/slide01.jpg'); height: 250px;">
+            <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+                <div class="d-flex justify-content-center align-items-center h-100">
+                    <div class="text-white" id="slideCaption1">
+                        <h1 class="mb-3">CASAS</h1>
+                   </div>
+                </div>
+            </div>
+        </div>
+
+<!-- Finaliza Portada -->
+
+    </header>
+
+<!-- Inicia Barra de Busqueda -->
+
+<div class="bg-primary py-3 sticky-lg-top d-none d-lg-block">
+        <div class="container">
+            <form class="row g-3 align-items-center">
+                <div class="col-sm-12 col-lg-2">
+                    <select class="form-select form-select-lg" aria-label="inmuebles">
+                        <option value="Casas" selected>Casas</option>
+                        <option value="Locales">Locales</option>
+                        <option value="Terrenos">Terrenos</option>
+                        <option value="Fraccionamientos">Fraccionamientos</option>
+                    </select>
+                </div>
+                <div class="col-sm-12 col-lg-2">
+                    <select class="form-select form-select-lg" aria-label="contratos">
+                        <option value="En venta" selected>En venta</option>
+                        <option value="En renta">En renta</option>>
+                    </select>
+                </div>
+                <div class="col-sm-12 col-lg-6">
+                    <input type="text" class="form-control form-control-lg" id="keywordsSearch"
+                        placeholder="Ingresa colonia, ciudad, estado, municipio, etc.">
+                </div>
+
+                <div class="d-grid gap-2 col-sm-12 col-lg-2">
+                    <button type="submit" class="btn btn-outline-light btn-lg">Buscar</button>
+                </div>
+            </form>
+        </div>
+</div>
+
+<!-- Finaliza Barra de Busqueda -->
+
+
+
+    <!-- Inicia Seccion Superior -->
+
+    <section id="superior" class="bg-light">
+
+    </section>
+
+<!-- Finaliza Secccion Superior -->
+
+<!-- Inicia Area Inmuebles Recientes -->
+
+    <section id="recientes">
+
+    </section>
+
+    <!-- Finaliza Area Inmuebles Recientes -->
+
+<!-- Inicia Area Listado de Inmuebles -->    
+
+    <section id="listado">
+
+        <div class="container">
+
+        <div class="row justify-content-center">
+
+<!-- Inicia Columna Izquierda -->
+
+            <div class="col-lg-8">
+
+                <!-- Inicia Area Listado de Inmuebles -->
+
+                <!-- Inicia Encabezado de listado -->
+
+                <div class="card mb-4 my-4">
+                    <div class="card-body p-0">
+                        <div class="float-start m-2">
+                            <div><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                                    class="bi bi-list d-none d-md-inline" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                                </svg><span class="ms-2">Listado de casas</span></div>
+                        </div>
+                        <div class="float-end m-2">
+                            <div class="dropdown">
+                                <a class="btn btn-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Dropdown link
+                                </a>
+
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Finaliza Encabezado de Listado -->
+                
+<!-- Inicia Lista de Inmuebles -->
+
+                    <div class="card bg-light border-0 card-inmueble-1 mb-4">
+                        <div class="row g-0">
+                            <div class="col-md-5">
+                                <div style="position: relative;">
+                                    <div class="tag">En Venta</div>
+                                    <div class="price">$1'100,000.00</div>
+                                    <img src="images/inmueble01.jpeg" class="card-img-top" alt="...">
+                                </div>  
+                            </div>
+                            <div class="col-md-7">
+        
+                                <div class="card-body">
+                                    <a href="" class="stretched-link">
+                                        <h5 class="card-title ">Casa Amueblada en la calle 20</h5>
+                                    </a>
+                                    <p class="card-text h6 text-muted">Col. México, Campeche.</p>
+                                    <p>Casa ubicada en calle Tierra del Fraccionamiento Valle del Sol que consta de 5 recamaras, 3 baños, Lorem ipsum dolor sit amet... </p>
+                                    <div class="card-text">
+                                        <div class="row">
+                                            <div class="col-auto text-center">
+                                                <div>
+                                                    <img src="images/Terreno.svg" alt="">
+                                                    165 m<sup>2</sup>
+                                                </div>
+                                                    </div>
+            
+                                            <div class="col-auto text-center">
+                                                <div>
+                                                    <img src="images/Construccion.svg" alt="">
+                                                    95 m<sup>2</sup>
+                                                </div>
+                                            </div>
+            
+                                            <div class="col-auto text-center">
+                                                <div>
+                                                    <img src="images/Recamaras.svg" alt="">
+                                                    1
+                                                </div>
+                                            </div>
+                                            <div class="col-auto text-center">
+                                                <div>
+                                                    <img src="images/Baños.svg" alt="">
+                                                    1
+                                                </div>
+                                            </div>
+                                            <div class="col-auto text-center">
+                                                <div>
+                                                    <img src="images/Estacionamiento.svg" alt="">
+                                                    1
+                                                </div>
+                                            </div>
+            
+            
+                                        </div>
+                                    </div>
+    
+                                </div>
+
+                            </div>
+
+    
+
+                        </div>
+                    </div>
+                    <div class="card bg-light border-0 card-inmueble-1 mb-4">
+                        <div class="row g-0">
+                            <div class="col-md-5">
+                                <div style="position: relative;">
+                                    <div class="tag">En Venta</div>
+                                    <div class="price">$1'100,000.00</div>
+                                    <img src="images/inmueble01.jpeg" class="card-img-top" alt="...">
+                                </div>  
+                            </div>
+                            <div class="col-md-7">
+        
+                                <div class="card-body">
+                                    <a href="" class="stretched-link">
+                                        <h5 class="card-title ">Casa Amueblada en la calle 20</h5>
+                                    </a>
+                                    <p class="card-text h6 text-muted">Col. México, Campeche.</p>
+                                    <p>Casa ubicada en calle Tierra del Fraccionamiento Valle del Sol que consta de 5 recamaras, 3 baños, Lorem ipsum dolor sit amet... </p>
+                                    <div class="card-text">
+                                        <div class="row">
+                                            <div class="col-auto text-center">
+                                                <div>
+                                                    <img src="images/Terreno.svg" alt="">
+                                                    165 m<sup>2</sup>
+                                                </div>
+                                                    </div>
+            
+                                            <div class="col-auto text-center">
+                                                <div>
+                                                    <img src="images/Construccion.svg" alt="">
+                                                    95 m<sup>2</sup>
+                                                </div>
+                                            </div>
+            
+                                            <div class="col-auto text-center">
+                                                <div>
+                                                    <img src="images/Recamaras.svg" alt="">
+                                                    1
+                                                </div>
+                                            </div>
+                                            <div class="col-auto text-center">
+                                                <div>
+                                                    <img src="images/Baños.svg" alt="">
+                                                    1
+                                                </div>
+                                            </div>
+                                            <div class="col-auto text-center">
+                                                <div>
+                                                    <img src="images/Estacionamiento.svg" alt="">
+                                                    1
+                                                </div>
+                                            </div>
+            
+            
+                                        </div>
+                                    </div>
+    
+                                </div>
+
+                            </div>
+
+    
+
+                        </div>
+                    </div>
+                    <div class="card bg-light border-0 card-inmueble-1 mb-4">
+                        <div class="row g-0">
+                            <div class="col-md-5">
+                                <div style="position: relative;">
+                                    <div class="tag">En Venta</div>
+                                    <div class="price">$1'100,000.00</div>
+                                    <img src="images/inmueble01.jpeg" class="card-img-top" alt="...">
+                                </div>  
+                            </div>
+                            <div class="col-md-7">
+        
+                                <div class="card-body">
+                                    <a href="" class="stretched-link">
+                                        <h5 class="card-title ">Casa Amueblada en la calle 20</h5>
+                                    </a>
+                                    <p class="card-text h6 text-muted">Col. México, Campeche.</p>
+                                    <p>Casa ubicada en calle Tierra del Fraccionamiento Valle del Sol que consta de 5 recamaras, 3 baños, Lorem ipsum dolor sit amet... </p>
+                                    <div class="card-text">
+                                        <div class="row">
+                                            <div class="col-auto text-center">
+                                                <div>
+                                                    <img src="images/Terreno.svg" alt="">
+                                                    165 m<sup>2</sup>
+                                                </div>
+                                                    </div>
+            
+                                            <div class="col-auto text-center">
+                                                <div>
+                                                    <img src="images/Construccion.svg" alt="">
+                                                    95 m<sup>2</sup>
+                                                </div>
+                                            </div>
+            
+                                            <div class="col-auto text-center">
+                                                <div>
+                                                    <img src="images/Recamaras.svg" alt="">
+                                                    1
+                                                </div>
+                                            </div>
+                                            <div class="col-auto text-center">
+                                                <div>
+                                                    <img src="images/Baños.svg" alt="">
+                                                    1
+                                                </div>
+                                            </div>
+                                            <div class="col-auto text-center">
+                                                <div>
+                                                    <img src="images/Estacionamiento.svg" alt="">
+                                                    1
+                                                </div>
+                                            </div>
+            
+            
+                                        </div>
+                                    </div>
+    
+                                </div>
+
+                            </div>
+
+    
+
+                        </div>
+                    </div>
+                    <div class="card bg-light border-0 card-inmueble-1 mb-4">
+                        <div class="row g-0">
+                            <div class="col-md-5">
+                                <div style="position: relative;">
+                                    <div class="tag">En Venta</div>
+                                    <div class="price">$1'100,000.00</div>
+                                    <img src="images/inmueble01.jpeg" class="card-img-top" alt="...">
+                                </div>  
+                            </div>
+                            <div class="col-md-7">
+        
+                                <div class="card-body">
+                                    <a href="" class="stretched-link">
+                                        <h5 class="card-title ">Casa Amueblada en la calle 20</h5>
+                                    </a>
+                                    <p class="card-text h6 text-muted">Col. México, Campeche.</p>
+                                    <p>Casa ubicada en calle Tierra del Fraccionamiento Valle del Sol que consta de 5 recamaras, 3 baños, Lorem ipsum dolor sit amet... </p>
+                                    <div class="card-text">
+                                        <div class="row">
+                                            <div class="col-auto text-center">
+                                                <div>
+                                                    <img src="images/Terreno.svg" alt="">
+                                                    165 m<sup>2</sup>
+                                                </div>
+                                                    </div>
+            
+                                            <div class="col-auto text-center">
+                                                <div>
+                                                    <img src="images/Construccion.svg" alt="">
+                                                    95 m<sup>2</sup>
+                                                </div>
+                                            </div>
+            
+                                            <div class="col-auto text-center">
+                                                <div>
+                                                    <img src="images/Recamaras.svg" alt="">
+                                                    1
+                                                </div>
+                                            </div>
+                                            <div class="col-auto text-center">
+                                                <div>
+                                                    <img src="images/Baños.svg" alt="">
+                                                    1
+                                                </div>
+                                            </div>
+                                            <div class="col-auto text-center">
+                                                <div>
+                                                    <img src="images/Estacionamiento.svg" alt="">
+                                                    1
+                                                </div>
+                                            </div>
+            
+            
+                                        </div>
+                                    </div>
+    
+                                </div>
+
+                            </div>
+
+    
+
+                        </div>
+                    </div>
+                    <div class="card bg-light border-0 card-inmueble-1 mb-4">
+                        <div class="row g-0">
+                            <div class="col-md-5">
+                                <div style="position: relative;">
+                                    <div class="tag">En Venta</div>
+                                    <div class="price">$1'100,000.00</div>
+                                    <img src="images/inmueble01.jpeg" class="card-img-top" alt="...">
+                                </div>  
+                            </div>
+                            <div class="col-md-7">
+        
+                                <div class="card-body">
+                                    <a href="" class="stretched-link">
+                                        <h5 class="card-title ">Casa Amueblada en la calle 20</h5>
+                                    </a>
+                                    <p class="card-text h6 text-muted">Col. México, Campeche.</p>
+                                    <p>Casa ubicada en calle Tierra del Fraccionamiento Valle del Sol que consta de 5 recamaras, 3 baños, Lorem ipsum dolor sit amet... </p>
+                                    <div class="card-text">
+                                        <div class="row">
+                                            <div class="col-auto text-center">
+                                                <div>
+                                                    <img src="images/Terreno.svg" alt="">
+                                                    165 m<sup>2</sup>
+                                                </div>
+                                                    </div>
+            
+                                            <div class="col-auto text-center">
+                                                <div>
+                                                    <img src="images/Construccion.svg" alt="">
+                                                    95 m<sup>2</sup>
+                                                </div>
+                                            </div>
+            
+                                            <div class="col-auto text-center">
+                                                <div>
+                                                    <img src="images/Recamaras.svg" alt="">
+                                                    1
+                                                </div>
+                                            </div>
+                                            <div class="col-auto text-center">
+                                                <div>
+                                                    <img src="images/Baños.svg" alt="">
+                                                    1
+                                                </div>
+                                            </div>
+                                            <div class="col-auto text-center">
+                                                <div>
+                                                    <img src="images/Estacionamiento.svg" alt="">
+                                                    1
+                                                </div>
+                                            </div>
+            
+            
+                                        </div>
+                                    </div>
+    
+                                </div>
+
+                            </div>
+
+    
+
+                        </div>
+                    </div>
+                    <div class="card bg-light border-0 card-inmueble-1 mb-4">
+                        <div class="row g-0">
+                            <div class="col-md-5">
+                                <div style="position: relative;">
+                                    <div class="tag">En Venta</div>
+                                    <div class="price">$1'100,000.00</div>
+                                    <img src="images/inmueble01.jpeg" class="card-img-top" alt="...">
+                                </div>  
+                            </div>
+                            <div class="col-md-7">
+        
+                                <div class="card-body">
+                                    <a href="" class="stretched-link">
+                                        <h5 class="card-title ">Casa Amueblada en la calle 20</h5>
+                                    </a>
+                                    <p class="card-text h6 text-muted">Col. México, Campeche.</p>
+                                    <p>Casa ubicada en calle Tierra del Fraccionamiento Valle del Sol que consta de 5 recamaras, 3 baños, Lorem ipsum dolor sit amet... </p>
+                                    <div class="card-text">
+                                        <div class="row">
+                                            <div class="col-auto text-center">
+                                                <div>
+                                                    <img src="images/Terreno.svg" alt="">
+                                                    165 m<sup>2</sup>
+                                                </div>
+                                                    </div>
+            
+                                            <div class="col-auto text-center">
+                                                <div>
+                                                    <img src="images/Construccion.svg" alt="">
+                                                    95 m<sup>2</sup>
+                                                </div>
+                                            </div>
+            
+                                            <div class="col-auto text-center">
+                                                <div>
+                                                    <img src="images/Recamaras.svg" alt="">
+                                                    1
+                                                </div>
+                                            </div>
+                                            <div class="col-auto text-center">
+                                                <div>
+                                                    <img src="images/Baños.svg" alt="">
+                                                    1
+                                                </div>
+                                            </div>
+                                            <div class="col-auto text-center">
+                                                <div>
+                                                    <img src="images/Estacionamiento.svg" alt="">
+                                                    1
+                                                </div>
+                                            </div>
+            
+            
+                                        </div>
+                                    </div>
+    
+                                </div>
+
+                            </div>
+
+    
+
+                        </div>
+                    </div>
+
+
+<!-- Finaliza Lista de Inmuebles -->
+
+<!-- Inicia paginación -->
+<nav aria-label="Paginacion Inmuebles">
+    <ul class="pagination justify-content-center my-4">
+      <li class="page-item">
+        <span class="page-link">Previous</span>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item active" aria-current="page">
+        <span class="page-link">2</span>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item">
+        <a class="page-link" href="#">Next</a>
+      </li>
+    </ul>
+  </nav>
+  <!-- Finaliza paginación -->
+
+                    <!-- Finaliza Area Listado de Inmuebles -->
+
+            </div>
+
+<!-- Finaliza Columna Izquierda -->
+
+<!-- Inicia Columna Derecha -->
+
+            <!-- <div class="col-lg-4">
+
+            </div> -->
+
+<!-- Finaliza Columna Derecha -->
+
+        </div>
+    </div>
+
+    </section>
+
+<!-- Finaliza Area Listado de Inmuebles -->
+
+<!-- Inicia Barra de Busqueda -->
+
+<div class="bg-primary sticky-lg-top d-block d-lg-none">
+    <div class="py-4" style="background-color: rgba(0, 0, 0, 0.25);">
+
+    
+    <div class="container">
+        <form class="row g-3 align-items-center">
+            <div class="col-sm-12 col-lg-2">
+                <select class="form-select form-select-lg" aria-label="inmuebles">
+                    <option value="Casas" selected>Casas</option>
+                    <option value="Locales">Locales</option>
+                    <option value="Terrenos">Terrenos</option>
+                    <option value="Fraccionamientos">Fraccionamientos</option>
+                </select>
+            </div>
+            <div class="col-sm-12 col-lg-2">
+                <select class="form-select form-select-lg" aria-label="contratos">
+                    <option value="En venta" selected>En venta</option>
+                    <option value="En renta">En renta</option>>
+                </select>
+            </div>
+            <div class="col-sm-12 col-lg-6">
+                <input type="text" class="form-control form-control-lg" id="keywordsSearch"
+                    placeholder="Ingresa colonia, ciudad, estado, municipio, etc.">
+            </div>
+
+            <div class="d-grid gap-2 col-sm-12 col-lg-2">
+                <button type="submit" class="btn btn-outline-light btn-lg">Buscar</button>
+            </div>
+        </form>
+    </div>
+</div>
+</div>
+
+<!-- Finaliza Barra de Busqueda -->
+
+<!-- Inicia Pie de Pagina -->
+
+    <footer class="text-center text-lg-start bg-primary text-white">
+
+        <section class="pt-1 pb-4">
+            <div class="container text-center text-md-start mt-5">
+                <div class="row mt-3">
+                    <div class="col-md-5 col-lg-6 col-xl-5 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            ¿Quienes Somos?
+                        </h6>
+                        <p>
+                            Somos una empresa 100% campechana que nos distinguimos por prestar servicios de promoción
+                            inmobiliaria a la comunidad, con una trayectoria exitosa de más de 35 años. ¡Somos los
+                            líderes en el mercado a sus órdenes!
+                        </p>
+                        <p>Miembro de la Asociación Mexicana de Profesionales Inmobiliarios, A.C. </p>
+                        <p> Asesor Inmobiliario
+                            con Certificación Estatal.</p>
+                    </div>
+
+
+
+                    <div class="col-md-3 col-lg-3 col-xl-2 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Inmuebles
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">Casas</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Locales</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Fraccionamientos</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Terrenos</a>
+                        </p>
+                    </div>
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <div class="row">
+                            <div>
+                                <h6 class="text-uppercase fw-bold mb-4">
+                                    Contacto
+                                </h6>
+                            </div>
+                            <div class="mb-auto mb-sm-4 mb-md-4 mb-lg-4 mb-xl-4 mb-xxl-0">
+                                <div class="d-none d-sm-block float-start h-100 me-3 mb-3"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-house-fill" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
+                                        <path fill-rule="evenodd"
+                                            d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
+                                    </svg></div>
+                                <div>
+                                    <p>Av. Miguel Alemán No. 22 planta baja entre 47 y 49-A, Barrio de Guadalupe. San
+                                        Francisco de Campeche, Campeche, México.</p>
+                                </div>
+
+                            </div>
+
+                            <div>
+                                <div class="d-none d-sm-block float-start h-100 me-3 mb-3"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-phone-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3 2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V2zm6 11a1 1 0 1 0-2 0 1 1 0 0 0 2 0z" />
+                                    </svg></div>
+                                <div>
+                                    <p>Teléfono Móvil: 981.829.0301</p>
+
+                                </div>
+
+                            </div>
+                            <div>
+                                <div class="d-none d-sm-block float-start h-100 me-3 mb-3"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                                    </svg></div>
+                                <div>
+                                    <p>Teléfono Oficina: 981.816.2326</p>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+        </section>
+        <div class="text-center p-4 bg-black bg-opacity-25">
+            ©2021 Todos los derechos reservados - www.gallardobienesraices.com
+        </div>
+    </footer>
+
+ <!-- Finaliza Pie de Pagina -->   
+
+    <script src="/node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -20,7 +20,7 @@
         <!-- Finaliza barra de navegacion -->
 
         <!-- Inicia Portada -->
-        <div w3-include-html="cover.htm"></div>
+        <div><?php include 'cover.htm';?></div>
         <!-- Finaliza Portada -->
 
     </header>

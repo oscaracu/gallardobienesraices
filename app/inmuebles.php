@@ -20,7 +20,7 @@
         <!-- Finaliza barra de navegacion -->
 
         <!-- Inicia Portada -->
-        <div w3-include-html="cover.htm"></div>
+        <div w3-include-html="portada-listados.htm"></div>
         <!-- Finaliza Portada -->
 
     </header>
@@ -30,11 +30,15 @@
     <!-- Finaliza Barra de Busqueda -->
 
     <!-- Inicia Contenido -->
-    <section w3-include-html="contenido.htm" id="superior" class="bg-light"></section>
+    <section w3-include-html="" id="superior" class="bg-light"></section>
     <!-- Finaliza Contenido -->
 
+    <!-- Inicia Area Breadcrumbs -->
+    <section w3-include-html="breadcrumds.htm" id="breadcrumds" class="bg-black bg-opacity-10"></section>
+    <!-- Finaliza Area Breadcrumbs -->
+
     <!-- Inicia Area Inmuebles Recientes -->
-    <section w3-include-html="recientes.htm" id="recientes" class="bg-black bg-opacity-10"></section>
+    <section id="recientes" class="bg-black bg-opacity-10"><?php include 'ficha-inmueble.htm';?></section>
     <!-- Finaliza Area Inmuebles Recientes -->
 
     <!-- Inicia Area de Contenido Principal -->
@@ -51,7 +55,6 @@
     <script src="/node_modules/@splidejs/splide/dist/js/splide.min.js"></script>
     <script src="js/main.js"></script>
     <script>includeHTML();</script>
-
 </body>
 
 </html>
