@@ -1,3 +1,46 @@
+.card-body a{
+    text-decoration: none;
+}
+.price{
+    background-color: #0d6efd;
+    padding: 2px 12px;
+    right: 0px;
+    bottom: 20px;
+    font-size: 22px;
+    color: white;
+    font-weight: 600;
+    z-index: 100;
+    position: absolute;
+}
+
+.card-inmueble-1 {
+    overflow: hidden;
+}
+.tag {
+    float: left;
+    position: absolute;
+    transform: rotate(-45deg);
+    left: -60px;
+    top: 30px;
+    text-align: center;
+    width: 200px;
+    font-size: 14px;
+    margin: 0;
+    color: #fff;
+    font-weight: 500;
+    line-height: 32px;
+    background: #dc3545;
+    text-transform: uppercase;
+}
+
+.seccion-superior, .area-contenido, .area-recientes {
+    padding: 50px 0 50px 0;
+}
+.titulo {
+    max-width: 700px; 
+    margin: 0 auto 40px;
+}
+
 .mask {
     position: absolute;
     top: 0;
@@ -29,8 +72,38 @@
     width: 200px;
     z-index: 99;
 }
-@media screen and (max-width: 768px){
-    #navbarTogglerDemo02{
-        padding-top: 70px;
+/* #slideCaption1 h1 span {
+    color:#ffc107;
+} */
+
+/* #menu ul li a {
+    color: #ffffff;
+    font-weight: 500;
+    padding-left: 15px;
+    text-transform: uppercase;
+}
+#menu ul li a:hover {
+    color: #ffc107;
+} */
+
+/* @media screen and (max-width: 768px){
+    #menu{
+        padding-top: 0px;
+    }
+} */
+@media screen and (max-width: 576px) {
+    #slideCaption1 p {
+        padding: 0 30px;
+    }
+    #slideCaption1 h3 {
+        padding: 0 20px;
+    }
+    #slideCaption1 h1 {
+        padding: 0 10px;
     }
 }
+/* @media screen and (min-width: 992px) {
+    nav.navbar.fixed-top.navbar-expand-lg.navbar-dark.bg-primary {
+        background-color: transparent !important;
+    }
+} */

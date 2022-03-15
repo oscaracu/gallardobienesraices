@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallardo Bienes Raices</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+
+<!-- Inicia barra de navegacion -->
+
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark" id="barNav" style="transition: background 0.5s;">
+            <div class="container">
+                <a class="navbar-brand logo" href="#"><img src="images/logo.png" alt="Gallardo Bienes Raices"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                    aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="menu">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">¿Quienes Somos?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Casas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Locales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Fraccionamientos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Terrenos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contacto</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+<!-- Finaliza barra de navegacion -->
+
+<!-- Inicia Portada -->
+
+
+        <div class="p-5 text-center bg-image" style="
+            background-image: url('images/slide01.jpg');
+            height: 650px;
+            /* top: 56px; */
+          ">
+            <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+                <div class="d-flex justify-content-center align-items-center h-100">
+                    <div class="text-white" id="slideCaption1">
+                        <h3 class="mb-3">¿NECESITA VENDER, COMPRAR O RENTAR?</h3>
+                        <h1 class="mb-3">GALLARDO BIENES RAÍCES <span class="text-warning">ES LA SOLUCIÓN</span></h1>
+                        <p>Somos una empresa 100% campechana que nos distinguimos por prestar servicios <br> de
+                            promoción inmobiliaria a la comunidad, con una trayectoria exitosa de más de 35 años.</p>
+                        <a class="btn btn-danger btn-lg mt-5" href="#!" role="button">CONTÁCTENOS</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!-- Finaliza Portada -->
+
+<!-- Inicia Barra de Busqueda -->
+
+        <div class="bg-primary py-3">
+            <div class="container">
+                <form class="row g-3 align-items-center">
+                    <div class="col-sm-12 col-lg-2">
+                        <select class="form-select form-select-lg" aria-label="inmuebles">
+                            <option value="Casas" selected>Casas</option>
+                            <option value="Locales">Locales</option>
+                            <option value="Terrenos">Terrenos</option>
+                            <option value="Fraccionamientos">Fraccionamientos</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-12 col-lg-2">
+                        <select class="form-select form-select-lg" aria-label="contratos">
+                            <option value="En venta" selected>En venta</option>
+                            <option value="En renta">En renta</option>>
+                        </select>
+                    </div>
+                    <div class="col-sm-12 col-lg-6">
+                        <input type="text" class="form-control form-control-lg" id="keywordsSearch"
+                            placeholder="Ingresa colonia, ciudad, estado, municipio, etc.">
+                    </div>
+
+                    <div class="d-grid gap-2 col-sm-12 col-lg-2">
+                        <button type="submit" class="btn btn-outline-light btn-lg">Buscar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+<!-- Finaliza Barra de Busqueda -->
+
+    </header>
+
+<!-- Inicia Seccion Superior -->
+
+    <section id="superior" class="seccion-superior bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 text-center text-md-start">
+                    <div class="titulo">
+                        <h2>¡Bienvenido a <span class="text-primary">Gallardo Bienes Raíces</span>!</h2>
+                        <p>Nos especializamos en la promoción de compra, venta, renta de desarrollos habitacionales,
+                            casas, terrenos, condominios y locales comerciales. Cualquiera puede vender una casa pero
+                            nosotros le ofrecemos:</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 col-lg-12 col-xl-6 text-center text-md-start">
+                            <div class="d-none d-lg-block float-start h-100 me-3 mb-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                                    class="bi bi-shield-check text-primary" viewBox="0 0 16 16">
+                                    <path
+                                        d="M5.338 1.59a61.44 61.44 0 0 0-2.837.856.481.481 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.725 10.725 0 0 0 2.287 2.233c.346.244.652.42.893.533.12.057.218.095.293.118a.55.55 0 0 0 .101.025.615.615 0 0 0 .1-.025c.076-.023.174-.061.294-.118.24-.113.547-.29.893-.533a10.726 10.726 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.775 11.775 0 0 1-2.517 2.453 7.159 7.159 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7.158 7.158 0 0 1-1.048-.625 11.777 11.777 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 62.456 62.456 0 0 1 5.072.56z" />
+                                    <path
+                                        d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h5>Seguridad.</h5>
+                                <p>Les brindamos la asesoría y conocimiento necesario para que tome la mejor decisión.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-lg-12 col-xl-6 text-center text-md-start">
+                            <div class="d-none d-lg-block float-start h-100 me-3 mb-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                                    class="bi bi-briefcase text-primary" viewBox="0 0 16 16">
+                                    <path
+                                        d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5zm1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0zM1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5z" />
+                                </svg>
+                            </div>
+                            <h5>Confidencialidad.</h5>
+                            <p>La privacidad con la que manejamos la información de nuestros clientes y de las
+                                operaciones nos permite garantizarle la absoluta discreción.</p>
+                        </div>
+
+                        <div class="col-md-12 col-lg-12 col-xl-6 text-center text-md-start">
+                            <div class="d-none d-lg-block float-start h-100 me-3 mb-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                                    class="bi bi-piggy-bank text-primary" viewBox="0 0 16 16">
+                                    <path
+                                        d="M5 6.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0zm1.138-1.496A6.613 6.613 0 0 1 7.964 4.5c.666 0 1.303.097 1.893.273a.5.5 0 0 0 .286-.958A7.602 7.602 0 0 0 7.964 3.5c-.734 0-1.441.103-2.102.292a.5.5 0 1 0 .276.962z" />
+                                    <path fill-rule="evenodd"
+                                        d="M7.964 1.527c-2.977 0-5.571 1.704-6.32 4.125h-.55A1 1 0 0 0 .11 6.824l.254 1.46a1.5 1.5 0 0 0 1.478 1.243h.263c.3.513.688.978 1.145 1.382l-.729 2.477a.5.5 0 0 0 .48.641h2a.5.5 0 0 0 .471-.332l.482-1.351c.635.173 1.31.267 2.011.267.707 0 1.388-.095 2.028-.272l.543 1.372a.5.5 0 0 0 .465.316h2a.5.5 0 0 0 .478-.645l-.761-2.506C13.81 9.895 14.5 8.559 14.5 7.069c0-.145-.007-.29-.02-.431.261-.11.508-.266.705-.444.315.306.815.306.815-.417 0 .223-.5.223-.461-.026a.95.95 0 0 0 .09-.255.7.7 0 0 0-.202-.645.58.58 0 0 0-.707-.098.735.735 0 0 0-.375.562c-.024.243.082.48.32.654a2.112 2.112 0 0 1-.259.153c-.534-2.664-3.284-4.595-6.442-4.595zM2.516 6.26c.455-2.066 2.667-3.733 5.448-3.733 3.146 0 5.536 2.114 5.536 4.542 0 1.254-.624 2.41-1.67 3.248a.5.5 0 0 0-.165.535l.66 2.175h-.985l-.59-1.487a.5.5 0 0 0-.629-.288c-.661.23-1.39.359-2.157.359a6.558 6.558 0 0 1-2.157-.359.5.5 0 0 0-.635.304l-.525 1.471h-.979l.633-2.15a.5.5 0 0 0-.17-.534 4.649 4.649 0 0 1-1.284-1.541.5.5 0 0 0-.446-.275h-.56a.5.5 0 0 1-.492-.414l-.254-1.46h.933a.5.5 0 0 0 .488-.393zm12.621-.857a.565.565 0 0 1-.098.21.704.704 0 0 1-.044-.025c-.146-.09-.157-.175-.152-.223a.236.236 0 0 1 .117-.173c.049-.027.08-.021.113.012a.202.202 0 0 1 .064.199z" />
+                                </svg>
+                            </div>
+                            <h5>Ahorro.</h5>
+                            <p>Al acudir con nosotros usted cuenta con el respaldo de que las operaciones de compra o
+                                venta están respaldadas por la asesoría de expertos valuadores, garantizando un servicio
+                                con los mejores precios del mercado. Todo esto con un costo de honorarios módico.</p>
+                        </div>
+
+                        <div class="col-md-12 col-lg-12 col-xl-6 text-center text-md-start">
+                            <div class="d-none d-lg-block float-start h-100 me-3 mb-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                                    class="bi bi-award text-primary" viewBox="0 0 16 16">
+                                    <path
+                                        d="M9.669.864 8 0 6.331.864l-1.858.282-.842 1.68-1.337 1.32L2.6 6l-.306 1.854 1.337 1.32.842 1.68 1.858.282L8 12l1.669-.864 1.858-.282.842-1.68 1.337-1.32L13.4 6l.306-1.854-1.337-1.32-.842-1.68L9.669.864zm1.196 1.193.684 1.365 1.086 1.072L12.387 6l.248 1.506-1.086 1.072-.684 1.365-1.51.229L8 10.874l-1.355-.702-1.51-.229-.684-1.365-1.086-1.072L3.614 6l-.25-1.506 1.087-1.072.684-1.365 1.51-.229L8 1.126l1.356.702 1.509.229z" />
+                                    <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z" />
+                                </svg>
+                            </div>
+                            <h5>Profesionalismo.</h5>
+                            <p>Nuestra experiencia y conocimiento de más de 25 años nos respaldan, por lo que usted
+                                acude con un experto en la materia, además de que contamos con el apoyo de un cuerpo de
+                                profesionales, abogados, peritos valuadores y las constructoras más prestigiadas de la
+                                localidad.</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-5 align-self-center">
+                    <img src="images/houses-306337.svg" alt="">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+<!-- Finaliza Secccion Superior -->
+
+<!-- Inicia Area Inmuebles Recientes -->
+
+    <section id="recientes" class="area-recientes">
+
+<!-- Inicia Encabezado Area Inmuebles Recientes -->
+
+        <div class="container">
+            <div class="text-center titulo">
+                <h1>Inmuebles recientes</h1>
+                <p>Tenemos una gran variedad de opciones a escoger que se pueden adaptar a sus necesidades, esto es solo
+                    una muestra de los más reciente en nuestra cartera de inmuebles.</p>
+            </div>
+        </div>
+
+<!-- Finaliza Encabezado Area Inmuebles Recientes -->
+
+<!-- Inicia Area Columnas Inmuebles -->
+
+            <div class="container" id="col-inmuebles">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                    <div class="col">
+                        <div class="card h-100 card-inmueble-1">
+                            <div style="position: relative;">
+                                <div class="tag">En Venta</div>
+                                <div class="price">$1'100,000.00</div>
+                                <img src="images/inmueble01.jpeg" class="card-img-top" alt="...">
+                            </div>
+                            <div class="card-body bg-primary text-white p-0">
+                                <div class="d-flex h-100 p-3 gx-3" style="background-color: rgba(0, 0, 0, 0.25);">
+                                    <div class="flex-fill text-center">
+                                        <div>
+                                            <img src="images/square-measument.svg" alt="">
+                                            165 m<sup>2</sup>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex-fill text-center">
+                                        <div>
+                                            <img src="images/blueprint.svg" alt="">
+                                            95 m<sup>2</sup>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex-fill text-center">
+                                        <div>
+                                            <img src="images/bed.svg" alt="">
+                                            1
+                                        </div>
+                                    </div>
+                                    <div class="flex-fill text-center">
+                                        <div>
+                                            <img src="images/bath.svg" alt="">
+                                            2
+                                        </div>
+                                    </div>
+
+                                    <div class="flex-fill text-center">
+                                        <div>
+                                            <img src="images/parking-garage.svg" alt="">
+                                            1
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="card-body text-center">
+                                <a href="" class="stretched-link">
+                                    <h5 class="card-title ">Casa Amueblada en la calle 20</h5>
+                                </a>
+                                <p class="card-text">Col. México, Campeche.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 card-inmueble-1">
+                            <div style="position: relative;">
+                                <div class="tag">En Venta</div>
+                                <div class="price">$1'100,000.00</div>
+                                <img src="images/inmueble01.jpeg" class="card-img-top" alt="...">
+                            </div>
+                            <div class="card-body bg-primary text-white p-0">
+                                <div class="d-flex h-100 p-3 gx-3" style="background-color: rgba(0, 0, 0, 0.25);">
+                                    <div class="flex-fill text-center">
+                                        <div>
+                                            <img src="images/square-measument.svg" alt="">
+                                            165 m<sup>2</sup>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex-fill text-center">
+                                        <div>
+                                            <img src="images/blueprint.svg" alt="">
+                                            95 m<sup>2</sup>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex-fill text-center">
+                                        <div>
+                                            <img src="images/bed.svg" alt="">
+                                            1
+                                        </div>
+                                    </div>
+                                    <div class="flex-fill text-center">
+                                        <div>
+                                            <img src="images/bath.svg" alt="">
+                                            2
+                                        </div>
+                                    </div>
+
+                                    <div class="flex-fill text-center">
+                                        <div>
+                                            <img src="images/parking-garage.svg" alt="">
+                                            1
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="card-body text-center">
+                                <a href="" class="stretched-link">
+                                    <h5 class="card-title ">Casa Amueblada en la calle 20</h5>
+                                </a>
+                                <p class="card-text">Col. México, Campeche.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 card-inmueble-1">
+                            <div style="position: relative;">
+                                <div class="tag">En Venta</div>
+                                <div class="price">$1'100,000.00</div>
+                                <img src="images/inmueble01.jpeg" class="card-img-top" alt="...">
+                            </div>
+                            <div class="card-body bg-primary text-white p-0">
+                                <div class="d-flex h-100 p-3 gx-3" style="background-color: rgba(0, 0, 0, 0.25);">
+                                    <div class="flex-fill text-center">
+                                        <div>
+                                            <img src="images/square-measument.svg" alt="">
+                                            165 m<sup>2</sup>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex-fill text-center">
+                                        <div>
+                                            <img src="images/blueprint.svg" alt="">
+                                            95 m<sup>2</sup>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex-fill text-center">
+                                        <div>
+                                            <img src="images/bed.svg" alt="">
+                                            1
+                                        </div>
+                                    </div>
+                                    <div class="flex-fill text-center">
+                                        <div>
+                                            <img src="images/bath.svg" alt="">
+                                            2
+                                        </div>
+                                    </div>
+
+                                    <div class="flex-fill text-center">
+                                        <div>
+                                            <img src="images/parking-garage.svg" alt="">
+                                            1
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="card-body text-center">
+                                <a href="" class="stretched-link">
+                                    <h5 class="card-title ">Casa Amueblada en la calle 20</h5>
+                                </a>
+                                <p class="card-text">Col. México, Campeche.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+<!-- Finaliza Area Columnas Inmuebles -->
+
+    </section>
+
+    <!-- Finaliza Area Inmuebles Recientes -->
+
+<!-- Inicia Area de Contenido Principal -->    
+
+    <section id="principal" class="container my-4">
+
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="card mb-4">
+                    <div class="card-body p-0">
+                        <div class="float-start m-2">
+                            <div><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                                    class="bi bi-list d-none d-md-inline" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                                </svg><span class="ms-2">Listado de casas</span></div>
+                        </div>
+                        <div class="float-end m-2">
+                            <div class="dropdown">
+                                <a class="btn btn-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Dropdown link
+                                </a>
+
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <div class="card bg-light border-0 card-inmueble-1 mb-4">
+                        <div class="row g-0">
+                            <div class="col-md-5">
+                                <div style="position: relative;">
+                                    <div class="tag">En Venta</div>
+                                    <div class="price">$1'100,000.00</div>
+                                    <img src="images/inmueble01.jpeg" class="card-img-top" alt="...">
+                                </div>  
+                            </div>
+                            <div class="col-md-7">
+        
+                                <div class="card-body">
+                                    <a href="" class="stretched-link">
+                                        <h5 class="card-title ">Casa Amueblada en la calle 20</h5>
+                                    </a>
+                                    <p class="card-text h6 text-muted">Col. México, Campeche.</p>
+                                    <p>Casa ubicada en calle Tierra del Fraccionamiento Valle del Sol que consta de 5 recamaras, 3 baños, Lorem ipsum dolor sit amet... </p>
+                                    <div class="card-text">
+                                        <div class="row">
+                                            <div class="col-auto text-center">
+                                                <div>
+                                                    <img src="images/Terreno.svg" alt="">
+                                                    165 m<sup>2</sup>
+                                                </div>
+                                                    </div>
+            
+                                            <div class="col-auto text-center">
+                                                <div>
+                                                    <img src="images/Construccion.svg" alt="">
+                                                    95 m<sup>2</sup>
+                                                </div>
+                                            </div>
+            
+                                            <div class="col-auto text-center">
+                                                <div>
+                                                    <img src="images/Recamaras.svg" alt="">
+                                                    1
+                                                </div>
+                                            </div>
+                                            <div class="col-auto text-center">
+                                                <div>
+                                                    <img src="images/Baños.svg" alt="">
+                                                    1
+                                                </div>
+                                            </div>
+                                            <div class="col-auto text-center">
+                                                <div>
+                                                    <img src="images/Estacionamiento.svg" alt="">
+                                                    1
+                                                </div>
+                                            </div>
+            
+            
+                                        </div>
+                                    </div>
+    
+                                </div>
+
+                            </div>
+
+    
+
+                        </div>
+                    </div>
+
+            </div>
+            <div class="col-lg-4"></div>
+        </div>
+
+    </section>
+
+<!-- Finaliza Area de Contenido Principal -->
+
+<!-- Inicia Pie de Pagina -->
+
+    <footer class="text-center text-lg-start bg-primary text-white">
+
+        <section class="pt-1 pb-4">
+            <div class="container text-center text-md-start mt-5">
+                <div class="row mt-3">
+                    <div class="col-md-5 col-lg-6 col-xl-5 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            ¿Quienes Somos?
+                        </h6>
+                        <p>
+                            Somos una empresa 100% campechana que nos distinguimos por prestar servicios de promoción
+                            inmobiliaria a la comunidad, con una trayectoria exitosa de más de 35 años. ¡Somos los
+                            líderes en el mercado a sus órdenes!
+                        </p>
+                        <p>Miembro de la Asociación Mexicana de Profesionales Inmobiliarios, A.C. </p>
+                        <p> Asesor Inmobiliario
+                            con Certificación Estatal.</p>
+                    </div>
+
+
+
+                    <div class="col-md-3 col-lg-3 col-xl-2 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Inmuebles
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">Casas</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Locales</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Fraccionamientos</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Terrenos</a>
+                        </p>
+                    </div>
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <div class="row">
+                            <div>
+                                <h6 class="text-uppercase fw-bold mb-4">
+                                    Contacto
+                                </h6>
+                            </div>
+                            <div class="mb-auto mb-sm-4 mb-md-4 mb-lg-4 mb-xl-4 mb-xxl-0">
+                                <div class="d-none d-sm-block float-start h-100 me-3 mb-3"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-house-fill" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
+                                        <path fill-rule="evenodd"
+                                            d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
+                                    </svg></div>
+                                <div>
+                                    <p>Av. Miguel Alemán No. 22 planta baja entre 47 y 49-A, Barrio de Guadalupe. San
+                                        Francisco de Campeche, Campeche, México.</p>
+                                </div>
+
+                            </div>
+
+                            <div>
+                                <div class="d-none d-sm-block float-start h-100 me-3 mb-3"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-phone-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3 2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V2zm6 11a1 1 0 1 0-2 0 1 1 0 0 0 2 0z" />
+                                    </svg></div>
+                                <div>
+                                    <p>Teléfono Móvil: 981.829.0301</p>
+
+                                </div>
+
+                            </div>
+                            <div>
+                                <div class="d-none d-sm-block float-start h-100 me-3 mb-3"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                                    </svg></div>
+                                <div>
+                                    <p>Teléfono Oficina: 981.816.2326</p>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+        </section>
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.25);">
+            ©2021 Todos los derechos reservados - www.gallardobienesraices.com
+        </div>
+    </footer>
+
+ <!-- Finaliza Pie de Pagina -->   
+
+    <script src="/node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
