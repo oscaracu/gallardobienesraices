@@ -1,0 +1,55 @@
+.card-body a{
+    text-decoration: none;
+}
+.price{
+    padding: 2px 12px;
+    right: 0px;
+    bottom: 20px;
+    font-size: 22px;
+    color: white;
+    font-weight: 600;
+    z-index: 100;
+    position: absolute;
+}
+
+.tag {
+    float: left;
+    position: absolute;
+    transform: rotate(-45deg);
+    left: -60px;
+    top: 30px;
+    text-align: center;
+    width: 200px;
+    font-size: 14px;
+    margin: 0;
+    color: #fff;
+    font-weight: 500;
+    line-height: 32px;
+    text-transform: uppercase;
+}
+
+.cover-image {
+    position: relative;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.logo {
+    margin-top: -12px;
+    margin-bottom: -56px;
+    padding-top: 15px;
+    background: #ffffff none repeat scroll 0 0;
+    display: inline-block;
+    height: 100px;
+    text-align: center;
+    width: 200px;
+    z-index: 99;
+}
+/* Splide */
+
+.splide__slide img {
+  width: 100%;
+  height: auto;
+}

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="template">
+	<name>gbr2022</name>
+	<creationDate>2022-03-15</creationDate>
+	<author>Oscar Cu</author>
+	<authorEmail>oscaracu@miplazaweb.com.mx</authorEmail>
+	<authorUrl>http://www.miplazaweb.com.mx</authorUrl>
+	<copyright>Oscar Cu 2022</copyright>
+	<license>GNU/GPL</license>
+	<version>1.0.0</version>
+	<description>Gallardo Bienes Raices 2022</description>
+	<files>
+		<filename>index.php</filename>
+		<filename>templateDetails.xml</filename>
+		<folder>images</folder>
+		<folder>css</folder>
+		<folder>js</folder>
+	</files>
+	<positions>
+        <position>navbar</position>
+		<position>cover</position>
+		<position>searchbar</position>
+		<position>breadcrumb</position>
+		<position>top</position>
+		<position>bottom</position>
+		<position>footer</position>
+	</positions>
+</extension>
