@@ -12,11 +12,13 @@
 	<files>
 		<filename>index.php</filename>
 		<filename>templateDetails.xml</filename>
+		<filename>favicon.ico</filename>
 		<folder>images</folder>
 		<folder>css</folder>
 		<folder>js</folder>
 	</files>
 	<positions>
+        <position>navbar-hidden</position>
         <position>navbar</position>
 		<position>cover</position>
 		<position>searchbar</position>
