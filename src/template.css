@@ -35,17 +35,7 @@
     background-size: cover;
     background-position: center;
 }
-.logo {
-    margin-top: -12px;
-    margin-bottom: -56px;
-    padding-top: 15px;
-    background: #ffffff none repeat scroll 0 0;
-    display: inline-block;
-    height: 100px;
-    text-align: center;
-    width: 200px;
-    z-index: 99;
-}
+
 /* Splide */
 
 .splide__slide img {

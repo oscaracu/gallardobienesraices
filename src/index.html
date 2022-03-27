@@ -9,6 +9,7 @@
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../scss/custom.scss">
     <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="template.css">
 </head>
 
@@ -20,70 +21,59 @@
 
         <!-- Inicia Nabvar -->
         <div class="bg-danger">
-            <nav class="navbar bg-white navbar-light d-block d-lg-none">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#"><img class="mx-auto" src="images/logo.png"
-                            alt="Gallardo Bienes Raices"></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
-                        aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation"><span
-                            class="navbar-toggler-icon "></span></button>
-                    <div class="collapse navbar-collapse text-center pt-3 fs-3" id="menu">
-                        <ul class="navbar-nav mb-2 mb-lg-0">
-                            <li class="nav-item active">
-                                <a class="nav-link" aria-current="page" href="#">Inicio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">¿Quienes Somos?</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Casas</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Locales</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Fraccionamientos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Terrenos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Contacto</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-            </nav>
-
-            <nav class="navbar navbar-expand bg-black bg-opacity-25 navbar-dark d-none d-lg-block" id="barNavLg">
+            <nav class="navbar navbar-dark navbar-expand-lg">
                 <div class="container">
-                    <a class="navbar-brand logo" href="#"><img src="images/logo.png" alt="Gallardo Bienes Raices"></a>
-                    <div class="navbar-collapse">
-                        <ul class="navbar-nav mb-2 mb-lg-0 fw-bold">
-                            <li class="nav-item active">
-                                <a class="nav-link" aria-current="page" href="#">Inicio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">¿Quienes Somos?</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Casas</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Locales</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Fraccionamientos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Terrenos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Contacto</a>
-                            </li>
+                    <a class="navbar-brand d-md-none" style="margin-top: -5px; margin-bottom: -35px; z-index: 100;"
+                        href="#"><img src="images/logo_ico_a.svg" alt="Gallardo Bienes Raíces" class="me-2"
+                            height="64"></a>
+                    <a class="navbar-brand bg-white p-3 d-none d-md-block"
+                        style="margin-top: -15px; margin-bottom: -35px; z-index: 100;" href="#"><img
+                            src="images/logo.svg" alt="Gallardo Bienes Raíces" width="160"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end fs-5" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title text-white" id="offcanvasNavbarLabel">Enlaces Rápidos</h5>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Inicio</a>
+                                </li>
+                                <li class="nav-item active">
+                                    <a class="nav-link" aria-current="page" href="#">Casas</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Locales</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Terrenos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Fraccionamientos</a>
+                                </li>
 
-                        </ul>
+                            </ul>
+                            <hr class="text-white d-lg-none">
+
+                            <span class="navbar-text"><a href="https://wa.me/529818290301"
+                                    class="link-light text-decoration-none me-2"><i
+                                        class="fa-brands fa-whatsapp"></i></a>
+                                        <a href="https://www.facebook.com/gallardobienesraices"
+                                                class="link-light text-decoration-none me-2"><i
+                                                    class="fa-brands fa-facebook"></i></a>
+                                        <a href="tel:+529818290301"
+                                                class="link-light text-decoration-none"><i
+                                                    class="fa-solid fa-phone-flip"></i></a>
+                                    </span>
+
+                        </div>
+
                     </div>
                 </div>
             </nav>
@@ -93,17 +83,17 @@
 
         <!-- Inicia Cover -->
         <div>
-            <div class="text-center cover-image" style="background-image: url('images/slide01.jpg'); height: 580px;">
-                <div class="h-100 bg-dark bg-opacity-75">
-                    <div class="container d-flex justify-content-center align-items-center h-100">
-                        <div class="text-white p-2">
-                            <h3 class="mb-3">¿NECESITA VENDER, COMPRAR O RENTAR?</h3>
-                            <h1 class="mb-3">GALLARDO BIENES RAÍCES <span class="text-warning">ES LA SOLUCIÓN</span>
-                            </h1>
-                            <p>Somos una empresa 100% campechana que nos distinguimos por prestar servicios <br> de
-                                promoción inmobiliaria a la comunidad, con una trayectoria exitosa de más de 35 años.
-                            </p>
-                            <a class="btn btn-danger btn-lg mt-5" href="#!" role="button">CONTÁCTENOS</a>
+            <div class="cover-image" style="background-image: url('images/slide01.jpg');">
+                <div class="bg-dark bg-opacity-75 container-fluid" style="height: 36.25em;">
+                    <div class="align-items-center d-flex h-100 justify-content-center row">
+                        <div class="col-10 col-lg-8 col-xl-7 p-2 text-center text-white" style="transform: scale(.77);">
+                            <div class="display-6">¿Necesita vender, comprar o rentar?</div>
+                            <div class="display-3 fw-bold">Gallardo Bienes Raíces</div>
+                            <div class="text-warning display-3 fw-bold">¡Es la solución!</div>
+                            <div class="h4 fw-normal">Somos una empresa 100% campechana que nos distinguimos por prestar
+                                servicios de promoción inmobiliaria a la comunidad, con una trayectoria exitosa de más
+                                de 35 años.</div>
+                            <a class="btn btn-danger btn-lg mt-5" href="#!">CONTÁCTENOS</a>
                         </div>
                     </div>
                 </div>
@@ -266,19 +256,20 @@
                 <div class="grid-item col-12 col-lg-4">
                     <div class="card">
                         <div class="card-header">
-                            <h3 class="card-title">Casa Colonial restaurada, en muy buenas condiciones.</h3>
+                            <h3 class="card-title lh-1">Casa Colonial restaurada, en muy buenas condiciones.</h3>
                             <h5 class="card-subtitle mb-2 text-muted">Centro Histórico, Campeche.</h5>
-                            <span class="badge bg-primary fs-4">$4,500,000.00</span>
+                            <span class="badge bg-primary fs-4">$30,000.00 mensual</span>
                         </div>
                         <div class="card-body">
                             <h5 class="card-title">Descripción:</h5>
-                            <p class="card-text">Cuenta con sala, comedor, cocina, 3 baños, alberca, dos recámaras y
+                            <p class="card-text lh-sm">Cuenta con sala, comedor, cocina, 3 baños, alberca, dos recámaras
+                                y
                                 área de descanso.
                                 (Muebles y equipos a tratar).</p>
                         </div>
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item fw-bold">Disponibilidad: <span
-                                    class="badge bg-danger fw-normal float-end">En
+                                    class="badge bg-danger float-end text-uppercase">En
                                     Renta</span></li>
                             <li class="list-group-item fw-bold">Terreno: <span class="fw-normal float-end">511.00
                                     m<sup>2</sup></span>
@@ -322,9 +313,10 @@
             <!-- Inicia Encabezado Area Inmuebles Recientes -->
 
             <div class="container pt-3">
-                <div class="text-center">
+                <div class="col-lg-10 mx-auto text-center">
                     <h1>Inmuebles recientes</h1>
-                    <p>Tenemos una gran variedad de opciones a escoger que se pueden adaptar a sus necesidades, esto es
+                    <p class="fs-5">Tenemos una gran variedad de opciones a escoger que se pueden adaptar a sus
+                        necesidades, esto es
                         solo
                         una muestra de los más reciente en nuestra cartera de inmuebles.</p>
                 </div>
@@ -335,7 +327,7 @@
             <!-- Inicia Area Columnas Inmuebles -->
 
             <div class="container pb-3">
-                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 justify-content-center">
                     <div class="col">
                         <div class="card h-100 overflow-hidden">
                             <div style="position: relative;">
@@ -396,75 +388,136 @@
     <!-- Inicia Component -->
     <section id="component">
         <div class="p-3 bg-light">
-            <div class="container-fluid container-md py-3">
-                <div class="row py-3">
-                    <div class="col-xl-7">
-                        <div class="text-center pb-4 pb-md-5">
-                            <h2>¡Bienvenido a <span class="text-primary">Gallardo Bienes Raíces</span>!</h2>
-                            <p>Nos especializamos en la promoción de compra, venta, renta de desarrollos habitacionales,
-                                casas, terrenos, condominios y locales comerciales. Cualquiera puede vender una casa
-                                pero
-                                nosotros le ofrecemos:</p>
+            <div class="container-md py-3">
+                <div class="col-lg-11 col-xxl-10 mx-auto text-center pb-4">
+                    <h1 class="text-primary">¡Bienvenido a Gallardo Bienes Raíces!</h1>
+                    <p class="fs-5 lh-sm text-muted">Nos especializamos en la promoción de compra, venta, renta de
+                        desarrollos habitacionales,
+                        casas, terrenos, condominios y locales comerciales. Cualquiera puede vender una casa
+                        pero
+                        nosotros le ofrecemos:</p>
+                </div>
+                <div class="col-lg-11 col-xxl-10 mx-auto py-3 justify-content-center">
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3" data-masonry='{ "percentPosition": true }'>
+                        <div class="col">
+                            <div style="position: absolute;">
+                                <i class="bi bi-shield-check text-primary h5 fs-2"></i>
+                            </div>
+                            <div style="margin-left: 42px;">
+                                <h5 class="fs-4">Seguridad.</h5>
+                                <p class="lh-sm text-muted">Les brindamos la asesoría y conocimiento necesario para que
+                                    tome la mejor
+                                    decisión.
+                                </p>
+                            </div>
                         </div>
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <div style="position: absolute;"><img
-                                        src="../node_modules/bootstrap-icons/icons/shield-check.svg" width="32">
-                                </div>
-                                <div style="margin-left: 42px;">
-                                    <h5>Seguridad.</h5>
-                                    <p>Les brindamos la asesoría y conocimiento necesario para que tome la mejor
-                                        decisión.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div style="position: absolute;"><img
-                                        src="../node_modules/bootstrap-icons/icons/briefcase.svg" width="32">
-                                </div>
-                                <div style="margin-left: 42px;">
-                                    <h5>Confidencialidad.</h5>
-                                    <p>La privacidad con la que manejamos la información de nuestros clientes y de las
-                                        operaciones nos permite garantizarle la absoluta discreción.</p>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-6">
-                                <div style="position: absolute;"><img
-                                        src="../node_modules/bootstrap-icons/icons/piggy-bank.svg" width="32">
-                                </div>
-                                <div style="margin-left: 42px;">
-                                    <h5>Ahorro.</h5>
-                                    <p>Al acudir con nosotros usted cuenta con el respaldo de que las operaciones de
-                                        compra o
-                                        venta están respaldadas por la asesoría de expertos valuadores, garantizando un
-                                        servicio
-                                        con los mejores precios del mercado. Todo esto con un costo de honorarios
-                                        módico.</p>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-6">
-                                <div style="position: absolute;"><img
-                                        src="../node_modules/bootstrap-icons/icons/award.svg" width="32">
-                                </div>
-                                <div style="margin-left: 42px;">
-                                    <h5>Profesionalismo.</h5>
-                                    <p>Nuestra experiencia y conocimiento de más de 25 años nos respaldan, por lo que
-                                        usted
-                                        acude con un experto en la materia, además de que contamos con el apoyo de un
-                                        cuerpo de
-                                        profesionales, abogados, peritos valuadores y las constructoras más prestigiadas
-                                        de la
-                                        localidad.</p>
-                                </div>
-                            </div>
-
+                        <div class="col text-center d-none d-xl-block">
+                            <img src="images/houses-306337.svg" alt="Ilustracion inmuebles" class="img-fluid opacity-50"
+                                style="height: 23em;">
                         </div>
+                        <div class="col">
+                            <div style="position: absolute;">
+                                <i class="bi bi-incognito text-primary h5 fs-2"></i>
+                            </div>
+                            <div style="margin-left: 42px;">
+                                <h5 class="fs-4">Confidencialidad.</h5>
+                                <p class="lh-sm text-muted">La privacidad con la que manejamos la información de
+                                    nuestros clientes y de las
+                                    operaciones nos permite garantizarle la absoluta discreción.</p>
+                            </div>
+                        </div>
+
+
+                        <div class="col">
+                            <div style="position: absolute;">
+                                <i class="bi bi-piggy-bank text-primary h5 fs-2"></i>
+                            </div>
+                            <div style="margin-left: 42px;">
+                                <h5 class="fs-4">Ahorro.</h5>
+                                <p class="lh-sm text-muted">Al acudir con nosotros usted cuenta con el respaldo de que
+                                    las operaciones de
+                                    compra o
+                                    venta están respaldadas por la asesoría de expertos valuadores, garantizando un
+                                    servicio
+                                    con los mejores precios del mercado. Todo esto con un costo de honorarios
+                                    módico.</p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div style="position: absolute;">
+                                <i class="bi bi-award text-primary h5 fs-2"></i>
+                            </div>
+                            <div style="margin-left: 42px;">
+                                <h5 class="fs-4">Profesionalismo.</h5>
+                                <p class="lh-sm text-muted">Nuestra experiencia y conocimiento de más de 25 años nos
+                                    respaldan, por lo que
+                                    usted
+                                    acude con un experto en la materia, además de que contamos con el apoyo de un
+                                    cuerpo de
+                                    profesionales, abogados, peritos valuadores y las constructoras más prestigiadas
+                                    de la
+                                    localidad.</p>
+                            </div>
+                        </div>
+
                     </div>
-                    <div class="col-xl-5 align-self-center d-none d-xl-block">
-                        <img src="images/houses-306337.svg" alt="">
+                    <!-- <div class="col-xl-4 align-self-center text-center d-none d-xl-block">
+                        <img src="images/houses-306337.svg" alt="Ilustracion inmuebles" style="height: 23em;">
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <div class="bg-primary text-center text-white">
+            <div class="bg-black bg-gradient bg-opacity-25">
+                <div class="p-3 p-lg-5 fw-normal display-5">¡Conozca nuestros servicios!</div>
+            </div>
+        </div>
+        <div class="p-3 bg-light">
+            <div class="container">
+                <div class="col-xl-10 mx-auto text-center">
+                    <div class="fs-1">Nos especializamos en:</div>
+                </div>
+
+                <div
+                    class="col-xl-10 mx-auto row row-cols-1 row-cols-md-2 row-cols-lg-4 text-center p-4 justify-content-center g-4">
+                    <div class="col">
+                        <i class="fa-solid fa-sign-hanging display-4 text-primary"></i>
+                        <h6 class="fs-4 lh-1">Promoción</h6>
+                        <p class="lh-1">De compra, venta o renta de desarrollos habitacionales, casas, terrenos,
+                            condominios y locales comerciales.</p>
                     </div>
+                    <div class="col"> <i class="fa-solid fa-hand-holding-dollar display-4 text-primary"></i>
+                        <h6 class="fs-4 lh-1">Gestión Financiera</h6>
+                        <p class="lh-1"> Le tramitamos y asesoramos en la obtención de créditos Bancarios, Hipotecarios,
+                            Infonavit, IMSS, Fovissste, ISFAM, etc.</p>
+                    </div>
+                    <div class="col"> <i class="fa-solid fa-file-signature display-4 text-primary"></i>
+                        <h6 class="fs-4 lh-1">Tramitación notarial</h6>
+                        <p class="lh-1">Gestión de documentación y procedimientos para escrituración notarial de
+                            propiedades.</p>
+                    </div>
+                    <div class="col"> <i class="fa-solid fa-house display-4 text-primary"></i>
+                        <h6 class="fs-4 lh-1">Administración de arrendamiento</h6>
+                        <p class="lh-1">Gestión de sus inmuebles buscando la puntualidad en el pago de sus rentas, el
+                            pago de servicios y mantenimiento.</p>
+                    </div>
+                    <div class="col"> <i class="fa-solid fa-tags display-4 text-primary"></i>
+                        <h6 class="fs-4 lh-1">Avalúos</h6>
+                        <p class="lh-1">Determinamos el valor justo del inmueble o terreno que desea comprar, vender o
+                            escriturar.</p>
+                    </div>
+                    <div class="col"> <i class="fa-solid fa-person-digging display-4 text-primary"></i>
+                        <h6 class="fs-4 lh-1">Asesoría en Construcción</h6>
+                        <p class="lh-1">Optimización y evaluación de proyectos nuevos y en curso del sector
+                            inmobiliario.</p>
+                    </div>
+                    <div class="col"> <i class="fa-solid fa-scale-balanced display-4 text-primary"></i>
+                        <h6 class="fs-4 lh-1">Asesoría jurídica</h6>
+                        <p class="lh-1">Contamos con implementación de estrategias de litigio relacionadas con la
+                            propiedad inmobiliaria.</p>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -483,11 +536,11 @@
 
                     <div class="text-secondary">
                         <div class="d-none d-md-block fs-2">
-                            <i class="bi-card-list" role="img"></i><span style="margin-left: 0.5em;">Lista de
+                            <i class="bi bi-card-list" role="img"></i><span style="margin-left: 0.5em;">Lista de
                                 casas</span>
                         </div>
                         <div class="d-block d-md-none">
-                            <i class="bi-card-list" role="img"></i><span style="margin-left: 0.5em;">Lista de
+                            <i class="bi bi-card-list" role="img"></i><span style="margin-left: 0.5em;">Lista de
                                 casas</span>
                         </div>
                     </div>
@@ -508,66 +561,9 @@
             <!-- Finaliza Encabezado de Listado -->
 
             <!-- Inicia Lista de Inmuebles -->
-            <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4" data-masonry='{ "percentPosition": true }'>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 justify-content-center">
                 <div class="col">
-                    <div class="card bg-light overflow-hidden mb-4">
-                        <div style="position: relative;">
-                            <div class="tag bg-danger">En Venta</div>
-                            <div class="price bg-primary">$800,000.00</div>
-                            <img src="images/inmueble01.jpeg" class="card-img-top" alt="...">
-                        </div>
-                        <div class="card-body">
-                            <a href="" class="stretched-link">
-                                <h5 class="card-title ">Casa nueva en calle 14</h5>
-                            </a>
-                            <p class="card-text h6 text-muted">Col. Carmelo, Campeche.</p>
-                            <p>Casa ubicada en calle Tierra del Fraccionamiento Valle del Sol que consta de 5 recamaras,
-                                3 baños,
-                                Lorem ipsum dolor sit amet... </p>
-                            <div class="card-text">
-                                <div class="row">
-                                    <div class="col-auto text-center">
-                                        <div>
-                                            <img src="images/Terreno.svg" alt="">
-                                            165 m<sup>2</sup>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-auto text-center">
-                                        <div>
-                                            <img src="images/Construccion.svg" alt="">
-                                            95 m<sup>2</sup>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-auto text-center">
-                                        <div>
-                                            <img src="images/Recamaras.svg" alt="">
-                                            1
-                                        </div>
-                                    </div>
-                                    <div class="col-auto text-center">
-                                        <div>
-                                            <img src="images/Baños.svg" alt="">
-                                            1
-                                        </div>
-                                    </div>
-                                    <div class="col-auto text-center">
-                                        <div>
-                                            <img src="images/Estacionamiento.svg" alt="">
-                                            1
-                                        </div>
-                                    </div>
-
-
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card bg-light overflow-hidden mb-4">
+                    <div class="card h-100 bg-light overflow-hidden mb-4 text-center">
                         <div style="position: relative;">
                             <div class="tag bg-danger">En Renta</div>
                             <div class="price bg-primary">$10,000.00 mensual</div>
@@ -578,167 +574,24 @@
                                 <h5 class="card-title ">Departamento Amueblado en Av. Hidalgo</h5>
                             </a>
                             <p class="card-text h6 text-muted">El Huanal, Campeche.</p>
-                            <p>Casa ubicada en calle Tierra del Fraccionamiento Valle del Sol que consta de 5 recamaras,
+                            <p class="card-text lh-1">Casa ubicada en calle Tierra del Fraccionamiento Valle del Sol que
+                                consta de 5 recamaras,
                                 3 baños,
                                 Lorem ipsum dolor sit amet... </p>
-                            <div class="card-text">
-                                <div class="row">
-                                    <div class="col-auto text-center">
-                                        <div>
-                                            <img src="images/Terreno.svg" alt="">
-                                            165 m<sup>2</sup>
-                                        </div>
-                                    </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="d-inline mx-1"><i class="fa-solid fa-vector-square"></i> 165m<sup>2</sup></div>
+                            <div class="d-inline mx-1"><i class="fa-solid fa-trowel-bricks"></i> 95m<sup>2</sup></div>
+                            <div class="d-inline mx-1"><i class="fa-solid fa-bed"></i> 2</div>
+                            <div class="d-inline mx-1"><i class="fa-solid fa-shower"></i> 1</div>
+                            <div class="d-inline mx-1"><i class="fa-solid fa-car"></i> 1</div>
 
-                                    <div class="col-auto text-center">
-                                        <div>
-                                            <img src="images/Construccion.svg" alt="">
-                                            95 m<sup>2</sup>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-auto text-center">
-                                        <div>
-                                            <img src="images/Recamaras.svg" alt="">
-                                            1
-                                        </div>
-                                    </div>
-                                    <div class="col-auto text-center">
-                                        <div>
-                                            <img src="images/Baños.svg" alt="">
-                                            1
-                                        </div>
-                                    </div>
-                                    <div class="col-auto text-center">
-                                        <div>
-                                            <img src="images/Estacionamiento.svg" alt="">
-                                            1
-                                        </div>
-                                    </div>
-
-
-                                </div>
-                            </div>
 
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card bg-light overflow-hidden mb-4">
-                        <div style="position: relative;">
-                            <div class="tag bg-danger">En Venta</div>
-                            <div class="price bg-primary">$1'100,000.00</div>
-                            <img src="images/inmueble03.jpeg" class="card-img-top" alt="...">
-                        </div>
-                        <div class="card-body">
-                            <a href="" class="stretched-link">
-                                <h5 class="card-title ">Casa ubicada en calle 20</h5>
-                            </a>
-                            <p class="card-text h6 text-muted">Col. México, Campeche.</p>
-                            <p>Casa ubicada en calle Tierra del Fraccionamiento Valle del Sol que consta de 5 recamaras,
-                                3 baños,
-                                Lorem ipsum dolor sit amet... </p>
-                            <div class="card-text">
-                                <div class="row">
-                                    <div class="col-auto text-center">
-                                        <div>
-                                            <img src="images/Terreno.svg" alt="">
-                                            165 m<sup>2</sup>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-auto text-center">
-                                        <div>
-                                            <img src="images/Construccion.svg" alt="">
-                                            95 m<sup>2</sup>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-auto text-center">
-                                        <div>
-                                            <img src="images/Recamaras.svg" alt="">
-                                            1
-                                        </div>
-                                    </div>
-                                    <div class="col-auto text-center">
-                                        <div>
-                                            <img src="images/Baños.svg" alt="">
-                                            1
-                                        </div>
-                                    </div>
-                                    <div class="col-auto text-center">
-                                        <div>
-                                            <img src="images/Estacionamiento.svg" alt="">
-                                            1
-                                        </div>
-                                    </div>
-
-
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card bg-light overflow-hidden mb-4">
-                        <div style="position: relative;">
-                            <div class="tag bg-danger">En Venta</div>
-                            <div class="price bg-primary">$800,000.00</div>
-                            <img src="images/inmueble01.jpeg" class="card-img-top" alt="...">
-                        </div>
-                        <div class="card-body">
-                            <a href="" class="stretched-link">
-                                <h5 class="card-title ">Casa nueva en calle 14</h5>
-                            </a>
-                            <p class="card-text h6 text-muted">Col. Carmelo, Campeche.</p>
-                            <p>Casa ubicada en calle Tierra del Fraccionamiento Valle del Sol que consta de 5 recamaras,
-                                3 baños,
-                                Lorem ipsum dolor sit amet... </p>
-                            <div class="card-text">
-                                <div class="row">
-                                    <div class="col-auto text-center">
-                                        <div>
-                                            <img src="images/Terreno.svg" alt="">
-                                            165 m<sup>2</sup>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-auto text-center">
-                                        <div>
-                                            <img src="images/Construccion.svg" alt="">
-                                            95 m<sup>2</sup>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-auto text-center">
-                                        <div>
-                                            <img src="images/Recamaras.svg" alt="">
-                                            1
-                                        </div>
-                                    </div>
-                                    <div class="col-auto text-center">
-                                        <div>
-                                            <img src="images/Baños.svg" alt="">
-                                            1
-                                        </div>
-                                    </div>
-                                    <div class="col-auto text-center">
-                                        <div>
-                                            <img src="images/Estacionamiento.svg" alt="">
-                                            1
-                                        </div>
-                                    </div>
-
-
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card bg-light overflow-hidden mb-4">
+                    <div class="card h-100 bg-light overflow-hidden mb-4 text-center">
                         <div style="position: relative;">
                             <div class="tag bg-danger">En Renta</div>
                             <div class="price bg-primary">$10,000.00 mensual</div>
@@ -749,108 +602,107 @@
                                 <h5 class="card-title ">Departamento Amueblado en Av. Hidalgo</h5>
                             </a>
                             <p class="card-text h6 text-muted">El Huanal, Campeche.</p>
-                            <p>Casa ubicada en calle Tierra del Fraccionamiento Valle del Sol que consta de 5 recamaras,
+                            <p class="card-text lh-1">Casa ubicada en calle Tierra del Fraccionamiento Valle del Sol que
+                                consta de 5 recamaras,
                                 3 baños,
                                 Lorem ipsum dolor sit amet... </p>
-                            <div class="card-text">
-                                <div class="row">
-                                    <div class="col-auto text-center">
-                                        <div>
-                                            <img src="images/Terreno.svg" alt="">
-                                            165 m<sup>2</sup>
-                                        </div>
-                                    </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="d-inline mx-1"><i class="fa-solid fa-vector-square"></i> 165m<sup>2</sup></div>
+                            <div class="d-inline mx-1"><i class="fa-solid fa-trowel-bricks"></i> 95m<sup>2</sup></div>
+                            <div class="d-inline mx-1"><i class="fa-solid fa-bed"></i> 2</div>
+                            <div class="d-inline mx-1"><i class="fa-solid fa-shower"></i> 1</div>
+                            <div class="d-inline mx-1"><i class="fa-solid fa-car"></i> 1</div>
 
-                                    <div class="col-auto text-center">
-                                        <div>
-                                            <img src="images/Construccion.svg" alt="">
-                                            95 m<sup>2</sup>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-auto text-center">
-                                        <div>
-                                            <img src="images/Recamaras.svg" alt="">
-                                            1
-                                        </div>
-                                    </div>
-                                    <div class="col-auto text-center">
-                                        <div>
-                                            <img src="images/Baños.svg" alt="">
-                                            1
-                                        </div>
-                                    </div>
-                                    <div class="col-auto text-center">
-                                        <div>
-                                            <img src="images/Estacionamiento.svg" alt="">
-                                            1
-                                        </div>
-                                    </div>
-
-
-                                </div>
-                            </div>
 
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card bg-light overflow-hidden mb-4">
+                    <div class="card h-100 bg-light overflow-hidden mb-4 text-center">
                         <div style="position: relative;">
-                            <div class="tag bg-danger">En Venta</div>
-                            <div class="price bg-primary">$1'100,000.00</div>
-                            <img src="images/inmueble03.jpeg" class="card-img-top" alt="...">
+                            <div class="tag bg-danger">En Renta</div>
+                            <div class="price bg-primary">$10,000.00 mensual</div>
+                            <img src="images/inmueble02.jpeg" class="card-img-top" alt="...">
                         </div>
                         <div class="card-body">
                             <a href="" class="stretched-link">
-                                <h5 class="card-title ">Casa ubicada en calle 20</h5>
+                                <h5 class="card-title ">Departamento Amueblado en Av. Hidalgo</h5>
                             </a>
-                            <p class="card-text h6 text-muted">Col. México, Campeche.</p>
-                            <p>Casa ubicada en calle Tierra del Fraccionamiento Valle del Sol que consta de 5 recamaras,
+                            <p class="card-text h6 text-muted">El Huanal, Campeche.</p>
+                            <p class="card-text lh-1">Casa ubicada en calle Tierra del Fraccionamiento Valle del Sol que
+                                consta de 5 recamaras,
                                 3 baños,
                                 Lorem ipsum dolor sit amet... </p>
-                            <div class="card-text">
-                                <div class="row">
-                                    <div class="col-auto text-center">
-                                        <div>
-                                            <img src="images/Terreno.svg" alt="">
-                                            165 m<sup>2</sup>
-                                        </div>
-                                    </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="d-inline mx-1"><i class="fa-solid fa-vector-square"></i> 165m<sup>2</sup></div>
+                            <div class="d-inline mx-1"><i class="fa-solid fa-trowel-bricks"></i> 95m<sup>2</sup></div>
+                            <div class="d-inline mx-1"><i class="fa-solid fa-bed"></i> 2</div>
+                            <div class="d-inline mx-1"><i class="fa-solid fa-shower"></i> 1</div>
+                            <div class="d-inline mx-1"><i class="fa-solid fa-car"></i> 1</div>
 
-                                    <div class="col-auto text-center">
-                                        <div>
-                                            <img src="images/Construccion.svg" alt="">
-                                            95 m<sup>2</sup>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-auto text-center">
-                                        <div>
-                                            <img src="images/Recamaras.svg" alt="">
-                                            1
-                                        </div>
-                                    </div>
-                                    <div class="col-auto text-center">
-                                        <div>
-                                            <img src="images/Baños.svg" alt="">
-                                            1
-                                        </div>
-                                    </div>
-                                    <div class="col-auto text-center">
-                                        <div>
-                                            <img src="images/Estacionamiento.svg" alt="">
-                                            1
-                                        </div>
-                                    </div>
-
-
-                                </div>
-                            </div>
 
                         </div>
                     </div>
                 </div>
+                <div class="col">
+                    <div class="card h-100 bg-light overflow-hidden mb-4 text-center">
+                        <div style="position: relative;">
+                            <div class="tag bg-danger">En Renta</div>
+                            <div class="price bg-primary">$10,000.00 mensual</div>
+                            <img src="images/inmueble02.jpeg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <a href="" class="stretched-link">
+                                <h5 class="card-title ">Departamento Amueblado en Av. Hidalgo</h5>
+                            </a>
+                            <p class="card-text h6 text-muted">El Huanal, Campeche.</p>
+                            <p class="card-text lh-1">Casa ubicada en calle Tierra del Fraccionamiento Valle del Sol que
+                                consta de 5 recamaras,
+                                3 baños,
+                                Lorem ipsum dolor sit amet... </p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="d-inline mx-1"><i class="fa-solid fa-vector-square"></i> 165m<sup>2</sup></div>
+                            <div class="d-inline mx-1"><i class="fa-solid fa-trowel-bricks"></i> 95m<sup>2</sup></div>
+                            <div class="d-inline mx-1"><i class="fa-solid fa-bed"></i> 2</div>
+                            <div class="d-inline mx-1"><i class="fa-solid fa-shower"></i> 1</div>
+                            <div class="d-inline mx-1"><i class="fa-solid fa-car"></i> 1</div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 bg-light overflow-hidden mb-4 text-center">
+                        <div style="position: relative;">
+                            <div class="tag bg-danger">En Renta</div>
+                            <div class="price bg-primary">$10,000.00 mensual</div>
+                            <img src="images/inmueble02.jpeg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <a href="" class="stretched-link">
+                                <h5 class="card-title ">Departamento Amueblado en Av. Hidalgo</h5>
+                            </a>
+                            <p class="card-text h6 text-muted">El Huanal, Campeche.</p>
+                            <p class="card-text lh-1">Casa ubicada en calle Tierra del Fraccionamiento Valle del Sol que
+                                consta de 5 recamaras,
+                                3 baños,
+                                Lorem ipsum dolor sit amet... </p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="d-inline mx-1"><i class="fa-solid fa-vector-square"></i> 165m<sup>2</sup></div>
+                            <div class="d-inline mx-1"><i class="fa-solid fa-trowel-bricks"></i> 95m<sup>2</sup></div>
+                            <div class="d-inline mx-1"><i class="fa-solid fa-bed"></i> 2</div>
+                            <div class="d-inline mx-1"><i class="fa-solid fa-shower"></i> 1</div>
+                            <div class="d-inline mx-1"><i class="fa-solid fa-car"></i> 1</div>
+
+
+                        </div>
+                    </div>
+                </div>
+
             </div>
             <!-- Finaliza Lista de Inmuebles -->
 
@@ -877,44 +729,41 @@
     <!-- Finaliza Bottom -->
 
     <!-- Inicia Footer -->
-    <footer class="bg-primary text-white">
+    <footer class="bg-primary bg-gradient text-white">
         <section class="pt-1 pb-3">
             <div class="container mt-5">
                 <div class="row mt-3">
-                    <div class="col-md-8 col-lg-5 col-xl-5 mx-auto mb-4 text-center text-md-start">
-                        <h6 class="text-uppercase fw-bold mb-4">
-                            ¿Quienes Somos?
-                        </h6>
-                        <p>
-                            Somos una empresa 100% campechana que nos distinguimos por prestar servicios de promoción
-                            inmobiliaria a la comunidad, con una trayectoria exitosa de más de 35 años. ¡Somos los
-                            líderes en el mercado a sus órdenes!
-                        </p>
-                        <p>Miembro de la Asociación Mexicana de Profesionales Inmobiliarios, A.C. </p>
-                        <p> Asesor Inmobiliario
-                            con Certificación Estatal.</p>
+                    <div class="col-md-8 col-lg-5 col-xl-4 mx-auto mb-4 text-center text-md-start">
+                        <div class="col-12 col-md-9">
+                            <img src="images/logo_white.svg" alt="Gallardo Bienes Raíces" class="mb-1">
+                            <p class="h6">¡Líder del mercado a sus órdenes!</p>
+                            <p class="lh-sm" style="opacity: 0.5;">Miembro de la Asociación Mexicana de Profesionales
+                                Inmobiliarios, A.C. y Asesor Inmobiliario con Certificación Estatal. </p>
+                        </div>
                     </div>
 
 
 
-                    <div class="col-md-4 col-lg-3 col-xl-2 mx-auto mb-4 text-center text-md-start">
+                    <div class="col-md-4 col-lg-3 col-xl-2 mx-auto mb-4 text-center text-md-start d-none d-md-block">
                         <h6 class="text-uppercase fw-bold mb-4">
                             Inmuebles
                         </h6>
-                        <p>
-                            <a href="#!" class="text-reset">Casas</a>
-                        </p>
-                        <p>
-                            <a href="#!" class="text-reset">Locales</a>
-                        </p>
-                        <p>
-                            <a href="#!" class="text-reset">Fraccionamientos</a>
-                        </p>
-                        <p>
-                            <a href="#!" class="text-reset">Terrenos</a>
-                        </p>
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a href="#!" class="nav-link link-light p-0">Casas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#!" class="nav-link link-light p-0">Locales</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#!" class="nav-link link-light p-0">Fraccionamientos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#!" class="nav-link link-light p-0">Terrenos</a>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="col-md-12 col-lg-4 col-lx-5 mx-auto mb-md-0 mb-4">
+                    <div class="col-md-12 col-lg-4 col-lx-6 mx-auto mb-md-0 mb-4">
                         <div class="row">
                             <div class="col-12">
                                 <h6 class="text-uppercase fw-bold mb-4 text-center text-lg-start">
@@ -922,26 +771,29 @@
                                 </h6>
                             </div>
                             <div class="col-12 mb-auto mb-sm-4 mb-xxl-0">
-                                <div style="position: absolute;"><i class="bi-house-fill"></i></div>
+                                <div style="position: absolute;"><i class="bi bi-house-fill"></i></div>
                                 <div style="margin-left: 32px;">
-                                    <p>Av. Miguel Alemán No. 22 planta baja entre 47 y 49-A, Barrio de Guadalupe. San
+                                    <p class="lh-sm">Av. Miguel Alemán No. 22 planta baja entre 47 y 49-A, Barrio de
+                                        Guadalupe. San
                                         Francisco de Campeche, Campeche, México.</p>
                                 </div>
 
                             </div>
 
                             <div class="col-6">
-                                <div style="position: absolute;"><i class="bi-phone-fill"></i></div>
+                                <div style="position: absolute;"><i class="bi bi-phone-fill"></i></div>
                                 <div style="margin-left: 32px;">
-                                    <p>Móvil: 981.829.0301</p>
+                                    <a href="tel:+529818290301" class="link-light text-decoration-none"><span
+                                            class="fw-bold">Móvil:</span> 981.829.0301</a>
 
                                 </div>
 
                             </div>
                             <div class="col-6">
-                                <div style="position: absolute;"><i class="bi-telephone-fill"></i></div>
+                                <div style="position: absolute;"><i class="bi bi-telephone-fill"></i></div>
                                 <div style="margin-left: 32px;">
-                                    <p>Oficina: 981.816.2326</p>
+                                    <a href="tel:+9818162326" class="link-light text-decoration-none"><span
+                                            class="fw-bold">Oficina:</span> 981.816.2326</a>
 
                                 </div>
 
@@ -953,7 +805,7 @@
                 </div>
         </section>
         <div class="text-center p-3 bg-black bg-opacity-25">
-            ©2021 Todos los derechos reservados - www.gallardobienesraices.com
+            ©2022 Todos los derechos reservados - www.gallardobienesraices.com
         </div>
     </footer>
     <!-- Finaliza Footer -->
