@@ -18,7 +18,6 @@
 		<folder>js</folder>
 	</files>
 	<positions>
-        <position>navbar-hidden</position>
         <position>navbar</position>
 		<position>cover</position>
 		<position>searchbar</position>

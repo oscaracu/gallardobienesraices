@@ -18,8 +18,7 @@ if ($tagId = $params->get('tag_id', ''))
 
 // The menu class is deprecated. Use nav instead
 ?>
-<div class="navbar-collapse">
-<ul class="fw-bold mb-2 mb-lg-0 navbar-nav"<?php echo $id; ?>>
+<ul class="flex-grow-1 justify-content-end navbar-nav pe-3"<?php echo $id; ?>>
 <?php foreach ($list as $i => &$item)
 {
 	$class = 'nav-item';
@@ -100,4 +99,3 @@ if ($tagId = $params->get('tag_id', ''))
 	}
 }
 ?></ul>
-  </div>
