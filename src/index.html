@@ -61,13 +61,12 @@
                             <span class="navbar-text"><a href="https://wa.me/529818290301"
                                     class="link-light text-decoration-none me-2"><i
                                         class="fa-brands fa-whatsapp"></i></a>
-                                        <a href="https://www.facebook.com/gallardobienesraices"
-                                                class="link-light text-decoration-none me-2"><i
-                                                    class="fa-brands fa-facebook"></i></a>
-                                        <a href="tel:+529818290301"
-                                                class="link-light text-decoration-none"><i
-                                                    class="fa-solid fa-phone-flip"></i></a>
-                                    </span>
+                                <a href="https://www.facebook.com/gallardobienesraices"
+                                    class="link-light text-decoration-none me-2"><i
+                                        class="fa-brands fa-facebook"></i></a>
+                                <a href="tel:+529818290301" class="link-light text-decoration-none"><i
+                                        class="fa-solid fa-phone-flip"></i></a>
+                            </span>
 
                         </div>
 
@@ -298,6 +297,26 @@
                             <div class="col-12"><textarea class="form-control" id="message" rows="5"
                                     placeholder="Escriba aquí su mensaje o comentarios." aria-label="comentarios"
                                     required></textarea></div>
+                            <div class="col-12 text-center">
+                                <p><small>
+                                        De acuerdo con la Ley de protección de datos personales, le informamos que los
+                                        datos personales proporcionados a través de este formulario serán almacenados y
+                                        podrán ser utilizados únicamente con fines de cumplimiento de obligaciones
+                                        legales.<br> <br>Al hacer clic en el botón enviar, he leído, he entendido y
+                                        aceptado la <a href="#"> política de privacidad.</a> </p>
+
+
+                                </small>
+                            </div>
+                            <div class="form-check col-6 mx-auto">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Doy mi consentimiento para mi información personal.
+                                </label>
+                            </div>
+                            <div class="col-12 justify-content-center">
+                                <div id="rc-anchor-container" class="rc-anchor rc-anchor-normal rc-anchor-light"><div id="recaptcha-accessible-status" class="rc-anchor-aria-status" aria-hidden="true">Invalid domain for site key. </div><div class="rc-anchor-error-msg-container" style="display:none"><span class="rc-anchor-error-msg" aria-hidden="true"></span></div><div class="rc-anchor-content"><div class="rc-inline-block"><div class="rc-anchor-center-container"><div class="rc-anchor-center-item rc-anchor-error-message">ERROR para el propietario del sitio web:<br>el dominio de la clave de sitio web no es válido</div></div></div></div><div class="rc-anchor-normal-footer"><div class="rc-anchor-logo-portrait" aria-hidden="true" role="presentation"><div class="rc-anchor-logo-img rc-anchor-logo-img-portrait"></div><div class="rc-anchor-logo-text">reCAPTCHA</div></div><div class="rc-anchor-pt"><a href="https://www.google.com/intl/es/policies/privacy/" target="_blank">Privacidad</a><span aria-hidden="true" role="presentation"> - </span><a href="https://www.google.com/intl/es/policies/terms/" target="_blank">Términos</a></div></div></div>
+                            </div>
                             <button type="submit" class="btn btn-primary">Enviar</button>
                         </div>
                     </form>
@@ -530,14 +549,15 @@
             <div class="py-4">
 
                 <nav class="navbar navbar-light bg-light px-3 justify-content-center justify-content-md-between">
-                    <span class="navbar-brand"><i class="fa-regular fa-rectangle-list me-1"></i> Resultados de busqueda</span>
+                    <span class="navbar-brand"><i class="fa-regular fa-rectangle-list me-1"></i> Resultados de
+                        busqueda</span>
                     <form class="d-flex" action="">
                         <select class="form-select" aria-label="Default select example">
                             <option selected>Open this select menu</option>
                             <option value="1">One</option>
                             <option value="2">Two</option>
                             <option value="3">Three</option>
-                          </select>
+                        </select>
                     </form>
 
 
@@ -823,6 +843,44 @@
 
     <script type="module" src="index.js"></script>
     <script src="template.js"></script>
+    <script type="text/javascript">
+	
+        // Splide
+        
+        document.addEventListener('DOMContentLoaded', function () {
+          var main = new Splide('#main-slider', {
+            type: 'fade',
+            rewind: true,
+            pagination: false,
+            arrows: true,
+          });
+        
+        
+          var thumbnails = new Splide('#thumbnail-slider', {
+            fixedWidth: 113,
+            fixedHeight: 75,
+            gap: 10,
+            rewind: true,
+            pagination: false,
+            cover: true,
+            isNavigation: true,
+            arrows: false,
+            focus: 'center',
+            breakpoints: {
+              600: {
+                fixedWidth: 75,
+                fixedHeight: 50,
+              },
+            },
+          });
+        
+        
+          main.sync(thumbnails);
+          main.mount();
+          thumbnails.mount();
+        });
+        
+        </script>
 
 </body>
 

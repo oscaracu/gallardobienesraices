@@ -73,7 +73,7 @@
     <section id="bottom">
             <jdoc:include type="modules" name="bottom" />
     </section>
-    <footer class="bg-primary text-white">
+    <footer class="bg-primary bg-gradient text-white">
             <jdoc:include type="modules" name="footer" />
     </footer>
     <script type="module" src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/js/index.f1f1f8b9.js"></script>
