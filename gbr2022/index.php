@@ -77,7 +77,7 @@
             <jdoc:include type="modules" name="footer" />
     </footer>
     <script type="module" src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/js/index.f1f1f8b9.js"></script>
-    <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/js/index.4e7765de.js"></script>
-    </body>
+    <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/js/index.264e2910.js"></script>
+    </body> 
 </html>
     
