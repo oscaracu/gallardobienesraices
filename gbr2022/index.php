@@ -15,8 +15,6 @@
         <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/index.ab70d727.css" type="text/css" />
         <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/index.9a515bc7.css" type="text/css" />
     </head>
-    <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/js/index.3287fdc4.js"></script>
-    <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/js/index.9d222439.js"></script>
 
     <body class="bg-black bg-opacity-10">
     <header>
@@ -76,8 +74,10 @@
     <footer class="bg-primary bg-gradient text-white">
             <jdoc:include type="modules" name="footer" />
     </footer>
-    <script type="module" src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/js/index.f1f1f8b9.js"></script>
+
+    <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/js/index.9d222439.js"></script>
+    <script type="module" src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/js/index.073d1641.js"></script>
     <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/js/index.264e2910.js"></script>
     </body> 
-</html>
+</html> 
     
