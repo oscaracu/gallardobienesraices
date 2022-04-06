@@ -10,23 +10,26 @@ document.addEventListener('DOMContentLoaded', function () {
     rewind: true,
     pagination: false,
     arrows: true,
+	autoplay: true,
+	pauseOnHover: true,
   });
 
 
   var thumbnails = new Splide('#thumbnail-slider', {
-    fixedWidth: 113,
-    fixedHeight: 75,
+    type: 'loop',
+    focus: 'center',
+    perPage: 6,
+    height: 75,
     gap: 10,
     rewind: true,
     pagination: false,
     cover: true,
     isNavigation: true,
     arrows: false,
-    focus: 'center',
     breakpoints: {
       600: {
-        fixedWidth: 75,
-        fixedHeight: 50,
+        perPage: 4,
+        height: 65,
       },
     },
   });
@@ -49,3 +52,18 @@ imagesloaded (elem, () => {
   });
 })
 
+// Print Masonry
+
+var mediaQueryList = window.matchMedia('print');
+mediaQueryList.addListener(function(mql) {
+  var msnry = new masonry( elem, {
+    itemSelector: '.grid-item',
+    columnWidth: '.grid-sizer',
+    percentPosition: true,
+  });
+    if (mql.matches) {
+        msnry.destroy();
+    } else {
+        msnry.layout();
+    }
+});

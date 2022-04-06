@@ -17,13 +17,13 @@
         <div class="bg-danger">
             <nav class="navbar navbar-dark navbar-expand-lg">
                 <div class="container">
-                    <a class="navbar-brand d-md-none" style="margin-top: -5px; margin-bottom: -35px; z-index: 100;"
+                    <a class="navbar-brand d-md-none d-print-none" style="margin-top: -5px; margin-bottom: -35px; z-index: 100;"
                         href="#"><img src="images/logo_ico_a.svg" alt="Gallardo Bienes Raíces" class="me-2"
                             height="64"></a>
-                    <a class="navbar-brand bg-white p-3 d-none d-md-block"
+                    <a class="navbar-brand bg-white p-3 d-none d-md-block d-print-block"
                         style="margin-top: -15px; margin-bottom: -35px; z-index: 100;" href="#"><img
                             src="images/logo.svg" alt="Gallardo Bienes Raíces" width="160"></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    <button class="navbar-toggler d-print-none" type="button" data-bs-toggle="offcanvas"
                         data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -74,7 +74,7 @@
         <!-- Inicia Cover -->
         <div>
             <div class="cover-image" style="background-image: url('images/collage01.jpg');">
-                <div class="bg-dark bg-opacity-75 container-fluid" style="height: 36.25em;">
+                <div class="bg-dark bg-opacity-75 container-fluid d-print-none" style="height: 36.25em;">
                     <div class="align-items-center d-flex h-100 justify-content-center row">
                         <div class="col-10 col-lg-8 col-xl-7 p-2 text-center text-white" style="transform: scale(.77);">
                             <div class="display-6">¿Necesita vender, comprar o rentar?</div>
@@ -95,7 +95,7 @@
     </header>
 
     <!-- Inicia Searchbar -->
-    <div class="sticky-lg-top">
+    <div class="sticky-lg-top d-print-none">
         <div class="bg-primary">
             <div class="py-4">
 
@@ -133,7 +133,7 @@
     <!-- Finaliza Searchbar -->
 
     <!-- Inicia Breadcrumbs -->
-    <section id="breadcrumbs">
+    <section class="d-print-none" id="breadcrumbs">
         <div class="container pt-3">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb m-0">
@@ -153,7 +153,7 @@
 
             <div class="row masonry">
 
-                <div class="grid-sizer col-12 col-lg-4"></div>
+                <div class="grid-sizer col-12 col-lg-4 d-print-none"></div>
 
                 <div class="grid-item col-12 col-lg-8">
 
@@ -271,13 +271,13 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="my-4">
+                    <div class="my-4 ratio ratio-4x3">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1876.388436553379!2d-90.5311660357943!3d19.849391762493287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa3ae2eee08a00744!2sGallardo%20Bienes%20Ra%C3%ADces!5e0!3m2!1ses-419!2smx!4v1647162082232!5m2!1ses-419!2smx"
                             width="100%" height="240" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                     </div>
                 </div>
-                <div class="grid-item col-12 col-lg-8">
+                <div class="grid-item col-12 col-lg-8 d-print-none">
                     <form class="bg-white p-3" action="">
                         <h3 class="text-muted text-center text-md-start pb-2">Solicite más información aquí:</h3>
                         <div class="row g-3 form-floating">

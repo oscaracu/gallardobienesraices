@@ -10,10 +10,7 @@
         <jdoc:include type="head" />
         <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/system/css/system.css" type="text/css" />
         <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/system/css/general.css" type="text/css" />
-        <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/index.b64b38ba.css" type="text/css" />
-        <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/index.e5264d3b.css" type="text/css" />
-        <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/index.ab70d727.css" type="text/css" />
-        <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/index.9a515bc7.css" type="text/css" />
+        <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/index.f31f9d09.css" type="text/css" />
     </head>
 
     <body class="bg-black bg-opacity-10">
@@ -75,9 +72,7 @@
             <jdoc:include type="modules" name="footer" />
     </footer>
 
-    <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/js/index.9d222439.js"></script>
-    <script type="module" src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/js/index.073d1641.js"></script>
-    <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/js/index.264e2910.js"></script>
+    <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/js/index.49bfa73c.js"></script>
     </body> 
 </html> 
     
